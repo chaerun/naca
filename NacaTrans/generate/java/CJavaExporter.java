@@ -26,7 +26,7 @@ import java.io.*;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 
-import com.sun.org.apache.xalan.internal.xsltc.runtime.Hashtable;
+import java.util.Hashtable;
 
 import parser.CGlobalCommentContainer;
 

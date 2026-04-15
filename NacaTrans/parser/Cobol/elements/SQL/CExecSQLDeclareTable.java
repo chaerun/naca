@@ -29,7 +29,7 @@ import jlib.xml.Tag;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
-import com.sun.org.apache.xalan.internal.xsltc.runtime.Hashtable;
+import java.util.Hashtable;
 
 import semantic.CBaseEntityFactory;
 import semantic.CBaseLanguageEntity;
