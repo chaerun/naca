@@ -29,9 +29,6 @@ import javax.imageio.ImageIO;
 
 import jlib.exception.ProgrammingException;
 
-import com.sun.image.codec.jpeg.JPEGCodec;
-import com.sun.image.codec.jpeg.JPEGImageEncoder;
-
 //*******************************************************************************
 //**              Helper class to create thumbnails.                           **
 //*******************************************************************************
@@ -210,9 +207,8 @@ public class ThumbnailHelper {
 		graph2d.dispose();
 
 // Encodes and saves the thumbnail
-        JPEGImageEncoder encoder = JPEGCodec.createJPEGEncoder(thumbnailStream);
         try {
-        	encoder.encode(bufferedImage);
+        	ImageIO.write(bufferedImage, "jpg", thumbnailStream);
         } catch (IOException e) {
         	throw new ProgrammingException(ProgrammingException.IO_ERROR,"I/O exception while saving the thumbnail: "+e.getMessage(),e);
         }
