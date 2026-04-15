@@ -14,7 +14,6 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>com.cross.easystruts.eclipse.easystrutsnature</nature>
-		<nature>net.sourceforge.metrics.nature</nature>
 		<nature>com.sysdeo.eclipse.tomcat.tomcatnature</nature>
 	</natures>
 </projectDescription>
