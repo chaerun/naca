@@ -20,15 +20,14 @@ package parser.condition;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-
-import parser.expression.*;
-import semantic.CDataEntity;
+import parser.expression.CDefaultConditionManager;
+import parser.expression.CExpression;
 import semantic.CBaseEntityFactory;
+import semantic.CDataEntity;
 import semantic.CDataEntity.CDataEntityType;
 import semantic.expression.CBaseEntityCondition;
 import semantic.expression.CBaseEntityExpression;
-import semantic.expression.CEntityCondEquals;
-import utils.*;;
+import semantic.expression.CEntityCondEquals;;
 
 /**
  * @author U930CV

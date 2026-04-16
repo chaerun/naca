@@ -19,13 +19,10 @@
 package parser.expression;
 
 import lexer.Cobol.CCobolConstantList;
-
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-
-import parser.Cobol.elements.SQL.SQLSetDateTimeType;
-import semantic.CDataEntity;
 import semantic.CBaseEntityFactory;
+import semantic.CDataEntity;
 import semantic.expression.CEntityConstant;
 import utils.modificationsReporter.Reporter;
 

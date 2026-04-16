@@ -15,14 +15,10 @@
  */
 package generate.java.expressions;
 
-import parser.CIdentifier;
 import generate.CBaseLanguageExporter;
-import semantic.expression.CEntityCurrentDateSQLFunction;
+import parser.CIdentifier;
 import semantic.expression.CEntityInsertSQLFunction;
-import semantic.expression.CEntityNamedSQLFunction;
 import utils.CObjectCatalog;
-import utils.Transcoder;
-import utils.SQLSyntaxConverter.SQLSyntaxConverter;
 
 /**
  *

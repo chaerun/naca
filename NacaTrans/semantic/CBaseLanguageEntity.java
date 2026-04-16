@@ -18,19 +18,21 @@
  */
 package semantic;
 
-import generate.*;
-
-import java.util.*;
-
-import org.apache.log4j.Logger;
-
+import generate.CBaseLanguageExporter;
+import generate.SQLDumper;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.ListIterator;
+import java.util.NoSuchElementException;
+import java.util.Vector;
 import parser.CLanguageElement;
-
 import semantic.expression.CBaseEntityCondition;
-import utils.*;
-import utils.SQLSyntaxConverter.SQLFunctionConvertion;
-import utils.SQLSyntaxConverter.SQLSyntaxConverter;
-
+import utils.CEntityHierarchy;
+import utils.CObjectCatalog;
+import utils.NacaTransAssertException;
+import utils.Transcoder;
 
 /**
  * @author sly

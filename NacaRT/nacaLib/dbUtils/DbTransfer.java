@@ -15,12 +15,8 @@
  */
 package nacaLib.dbUtils;
 
-import nacaLib.accounting.AccountingRessourceDesc;
-import nacaLib.basePrgEnv.BaseEnvironment;
-import jlib.log.Log;
-import jlib.sql.DbConnectionBase;
-import jlib.sql.DbConnectionException;
 import jlib.xml.Tag;
+import nacaLib.basePrgEnv.BaseEnvironment;
 
 /**
  *

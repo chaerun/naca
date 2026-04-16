@@ -21,8 +21,6 @@ import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.Hashtable;
 
-import jlib.sqlMapper.RecordId;
-
 /**
  *
  * @author Pierre-Jean Ditscheid, Consultas SA

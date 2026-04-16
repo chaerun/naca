@@ -15,7 +15,6 @@ package nacaLib.batchPrgEnv;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.ArrayList;
-
 import jlib.log.Log;
 import jlib.misc.ConsoleInput;
 import jlib.misc.EnvironmentVar;
@@ -36,7 +35,6 @@ import nacaLib.dbUtils.SQLFileExecutor;
 import nacaLib.dbUtils.SQLLoad;
 import nacaLib.dbUtils.SQLUnload;
 import nacaLib.exceptions.AbortSessionException;
-import nacaLib.exceptions.SQLErrorException;
 import nacaLib.fileConverter.FileConverter;
 import nacaLib.fileConverter.FileEncodingConverterWithClass;
 import nacaLib.fileConverter.FileEncodingConverterWithDesc;

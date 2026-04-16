@@ -18,16 +18,16 @@
  */
 package semantic;
 
-import generate.*;
+import generate.CBaseLanguageExporter;
 import lexer.Cobol.CCobolConstantList;
 import parser.expression.CTerminal;
-import semantic.Verbs.*;
-import semantic.expression.CBaseEntityExpression;
+import semantic.Verbs.CEntityAssign;
+import semantic.Verbs.CEntitySetConstant;
 import semantic.expression.CBaseEntityCondition;
-import semantic.expression.CEntityCondCompare;
+import semantic.expression.CBaseEntityExpression;
 import semantic.expression.CEntityCondIsConstant;
-import semantic.expression.CEntityConstant;
-import utils.*;
+import utils.CObjectCatalog;
+import utils.Transcoder;
 
 /**
  * @author sly

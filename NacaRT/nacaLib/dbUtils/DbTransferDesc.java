@@ -18,22 +18,18 @@ package nacaLib.dbUtils;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-
-import nacaLib.basePrgEnv.BaseEnvironment;
-import nacaLib.basePrgEnv.BaseResourceManager;
-import nacaLib.bdb.BtreePooledThreadWriterFactory;
-import nacaLib.sqlSupport.SQLConnectionManager;
 import jlib.log.Log;
 import jlib.misc.DBIOAccounting;
 import jlib.misc.DBIOAccountingType;
-import jlib.misc.StringUtil;
 import jlib.sql.DbConnectionBase;
 import jlib.sql.DbConnectionException;
 import jlib.sql.DbConnectionPool;
 import jlib.sql.DbPreparedStatement;
 import jlib.threads.PoolOfThreads;
-import jlib.threads.SimpleThreadPool;
 import jlib.xml.Tag;
+import nacaLib.basePrgEnv.BaseEnvironment;
+import nacaLib.basePrgEnv.BaseResourceManager;
+import nacaLib.sqlSupport.SQLConnectionManager;
 
 /**
  *

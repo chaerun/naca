@@ -18,50 +18,22 @@
  */
 package lexer;
 
-import java.io.IOException;
-import java.io.InputStream;
 import java.util.Arrays;
 import java.util.Vector;
-
-import parser.CBaseElement;
-import parser.Cobol.elements.CProgram;
-import parser.Cobol.elements.CStandAloneWorking;
-
 import jlib.misc.AsciiEbcdicConverter;
 import jlib.misc.FileSystem;
 import jlib.misc.StringUtil;
-
-import lexer.CBaseToken;
-import lexer.CConstantList;
-import lexer.CKeywordList;
-import lexer.CReservedConstant;
-import lexer.CReservedKeyword;
-import lexer.CTokenConstant;
-import lexer.CTokenGeneric;
-import lexer.CTokenIdentifier;
-import lexer.CTokenKeyword;
-import lexer.CTokenList;
-import lexer.CTokenNumber;
-import lexer.CTokenString;
-import lexer.CTokenType;
-import lexer.CTokenUnrecognized;
 import lexer.Cobol.CCobolKeywordList;
-
-import semantic.CBaseLanguageEntity;
-import semantic.CEntityClass;
-import semantic.CEntityExternalDataStructure;
 import utils.BaseEngine;
 import utils.CGlobalCatalog;
 import utils.CGlobalEntityCounter;
 import utils.COriginalLisiting;
 import utils.CRulesManager;
 import utils.CTransApplicationGroup;
+import utils.CTransApplicationGroup.EProgramType;
 import utils.FileContentBuffer;
 import utils.NacaTransAssertException;
 import utils.Transcoder;
-import utils.TranscoderEngine;
-import utils.CTransApplicationGroup.EProgramType;
-
 
 /**
  * @author U930CV

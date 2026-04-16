@@ -25,20 +25,18 @@ import java.util.ListIterator;
 import java.util.NoSuchElementException;
 import java.util.SortedSet;
 import java.util.TreeSet;
-
-import jlib.misc.NumberParser;
 import jlib.xml.Tag;
 import jlib.xml.TagCursor;
-
-import lexer.*;
+import lexer.CBaseToken;
+import lexer.CReservedConstant;
+import lexer.CReservedKeyword;
+import lexer.CTokenList;
+import lexer.CTokenType;
 import lexer.BMS.CBMSConstantList;
 import lexer.BMS.CBMSKeywordList;
-
+import org.apache.xml.utils.StringVector;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-
-import org.apache.xml.utils.StringVector;
-
 import parser.CBaseElement;
 import parser.BMS.CBMSElement;
 import semantic.CBaseEntityFactory;

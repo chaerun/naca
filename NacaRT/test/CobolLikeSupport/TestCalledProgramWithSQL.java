@@ -19,12 +19,7 @@
  * @author Pierre-Jean Ditscheid, Consultas SA
  * @version $Id$
  */
-import java.sql.Time;
-import java.util.Date;
-
 import nacaLib.callPrg.CalledProgram;
-import nacaLib.program.Paragraph;
-import nacaLib.sqlSupport.SQLCode;
 import nacaLib.sqlSupport.SQLCursor;
 import nacaLib.varEx.DataSection;
 import nacaLib.varEx.ParamDeclaration;

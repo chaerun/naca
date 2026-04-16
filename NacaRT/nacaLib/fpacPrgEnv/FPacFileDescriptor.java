@@ -13,15 +13,12 @@
 package nacaLib.fpacPrgEnv;
 
 import jlib.log.Log;
-import jlib.misc.FileEndOfLine;
 import jlib.misc.LineRead;
 import jlib.misc.RecordLengthDefinition;
-import nacaLib.debug.BufferSpy;
 import nacaLib.varEx.BaseFileDescriptor;
 import nacaLib.varEx.RecordDescriptorAtEnd;
 import nacaLib.varEx.Var;
 import nacaLib.varEx.VarBuffer;
-
 
 public class FPacFileDescriptor extends BaseFileDescriptor
 {	

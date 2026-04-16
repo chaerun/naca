@@ -17,8 +17,6 @@ package nacaLib.sqlSupport;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-
-import jlib.sql.DbPreparedStatement;
 import nacaLib.varEx.VarBase;
 
 /**

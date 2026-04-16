@@ -16,8 +16,6 @@
 package nacaLib.dbUtils;
 
 import jlib.sql.DbConnectionBase;
-import jlib.sql.DbPreparedStatement;
-import jlib.sql.SQLTypeOperation;
 import nacaLib.basePrgEnv.BaseSession;
 import nacaLib.varEx.FileDescriptor;
 

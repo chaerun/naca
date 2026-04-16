@@ -7,13 +7,9 @@
 package nacaLib.sqlSupport;
 
 import java.util.ArrayList;
-
 import jlib.misc.ArrayFixDyn;
-import jlib.misc.StringUtil;
 import jlib.sql.DbConnectionBase;
 import jlib.sql.OracleColumnDefinition;
-import jlib.sql.OracleTableDefinition;
-import jlib.sql.OracleTableDefinitionManager;
 
 public class PreparedDeleteStmtColumnTypeManager extends PreparedStmtColumnTypeManager
 {

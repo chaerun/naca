@@ -17,18 +17,14 @@
  * Window&gt;Preferences&gt;Java&gt;Code Generation&gt;Code and Comments
  */
 package generate.java.SQL;
-import java.util.ArrayList;
 
-import parser.Cobol.elements.SQL.CSQLTableColDescriptor;
-
-import jlib.misc.StringUtil;
 import generate.CBaseLanguageExporter;
 import generate.SQLDumper;
+import jlib.misc.StringUtil;
 import semantic.CDataEntity;
 import semantic.CDataEntity.CDataEntityType;
 import semantic.SQL.CEntitySQLInsertStatement;
 import utils.CObjectCatalog;
-import utils.Transcoder;
 
 /**
  * @author U930DI

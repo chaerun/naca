@@ -15,11 +15,7 @@
  */
 package nacaLib.spServer;
 
-
 import java.sql.Connection;
-
-import org.w3c.dom.Document;
-
 import jlib.misc.BasicLogger;
 import jlib.sql.DbConnectionManagerBase;
 import nacaLib.basePrgEnv.BaseEnvironment;
@@ -27,7 +23,7 @@ import nacaLib.basePrgEnv.BaseProgramLoader;
 import nacaLib.basePrgEnv.BaseResourceManager;
 import nacaLib.basePrgEnv.BaseSession;
 import nacaLib.basePrgEnv.CurrentUserInfo;
-import nacaLib.sqlSupport.SQLConnection;
+import org.w3c.dom.Document;
 
 public class SpServerSession extends BaseSession
 {	

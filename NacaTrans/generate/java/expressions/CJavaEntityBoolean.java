@@ -18,12 +18,9 @@
  */
 package generate.java.expressions;
 
-import jlib.misc.NumberParser;
 import generate.CBaseLanguageExporter;
 import semantic.expression.CEntityBoolean;
-import semantic.expression.CEntityNumber;
 import utils.CObjectCatalog;
-import utils.modificationsReporter.Reporter;
 
 /**
  * @author sly

@@ -19,9 +19,7 @@
 package nacaLib.sqlSupport;
 
 import jlib.log.Log;
-import jlib.misc.ArrayFixDyn;
 import jlib.misc.NumberParser;
-import jlib.misc.StringUtil;
 import jlib.xml.Tag;
 import jlib.xml.TagCursor;
 

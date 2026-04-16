@@ -21,7 +21,6 @@ import java.util.Enumeration;
 import java.util.Hashtable;
 import java.util.Stack;
 import java.util.Vector;
-
 import jlib.misc.AsciiEbcdicConverter;
 import jlib.misc.NumberParser;
 import jlib.misc.StringUtil;
@@ -29,14 +28,9 @@ import jlib.sql.SQLTypeOperation;
 import jlib.xml.Tag;
 import jlib.xml.TagCursor;
 import lexer.CTokenList;
-
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
-
-import parser.Cobol.elements.SQL.CExecSQLDeclareTable;
-import parser.Cobol.elements.SQL.CSQLTableColDescriptor;
-
 import utils.DCLGenConverter.DCLGenConverter;
 import utils.SQLSyntaxConverter.SQLSyntaxConverter;
 import utils.modificationsReporter.Reporter;

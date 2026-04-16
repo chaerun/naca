@@ -19,7 +19,6 @@
 package nacaLib.varEx;
 
 import nacaLib.tempCache.CStr;
-import nacaLib.tempCache.TempCacheLocator;
 
 /**
  * @author U930DI

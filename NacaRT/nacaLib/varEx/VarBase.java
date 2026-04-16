@@ -19,11 +19,9 @@
 package nacaLib.varEx;
 
 import java.math.BigDecimal;
-
 import jlib.misc.AsciiEbcdicConverter;
 import jlib.misc.LineRead;
 import nacaLib.base.CJMapObject;
-import nacaLib.base.JmxGeneralStat;
 import nacaLib.basePrgEnv.BaseProgram;
 import nacaLib.basePrgEnv.BaseProgramManager;
 import nacaLib.fpacPrgEnv.FPacVarManager;

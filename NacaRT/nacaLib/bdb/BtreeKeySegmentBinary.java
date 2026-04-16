@@ -15,8 +15,6 @@
  */
 package nacaLib.bdb;
 
-import jlib.misc.LittleEndingUnsignBinaryBufferStorage;
-
 /**
  *
  * @author Pierre-Jean Ditscheid, Consultas SA

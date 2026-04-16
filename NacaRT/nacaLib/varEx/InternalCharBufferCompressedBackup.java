@@ -15,8 +15,6 @@
  */
 package nacaLib.varEx;
 
-import nacaLib.debug.BufferSpy;
-
 /**
  *
  * @author Pierre-Jean Ditscheid, Consultas SA

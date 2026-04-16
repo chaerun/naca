@@ -18,25 +18,17 @@
  */
 package utils;
 
-
 import java.io.File;
 import java.io.FilenameFilter;
 import java.util.Enumeration;
 import java.util.Hashtable;
 import java.util.NoSuchElementException;
 import java.util.Vector;
-
-import jlib.log.Log;
 import jlib.misc.FileSystem;
-import jlib.misc.StringUtil;
-
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
-
 import parser.Cobol.elements.CCopyDeepReplacing;
-import parser.Cobol.elements.CStandAloneWorking;
-
 import semantic.CBaseEntityFactory;
 import semantic.CEntityExternalDataStructure;
 import semantic.CIgnoreExternalEntity;

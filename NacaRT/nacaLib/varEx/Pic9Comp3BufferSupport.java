@@ -15,7 +15,6 @@ package nacaLib.varEx;
 import jlib.log.StackStraceSupport;
 import jlib.misc.BasePic9Comp3BufferSupport;
 import nacaLib.basePrgEnv.BaseProgramLoader;
-import nacaLib.batchOOApi.WriteBufferExt;
 import nacaLib.debug.BufferSpy;
 import nacaLib.tempCache.TempCacheLocator;
 

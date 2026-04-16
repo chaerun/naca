@@ -11,11 +11,9 @@
  * Licensed under GPL (GPL-LICENSE.txt) license.
  */
 
-import jlib.misc.StopWatchNano;
-import jlib.misc.Time_ms;
 import idea.onlinePrgEnv.OnlineProgram;
-import nacaLib.varEx.*;
-import nacaLib.program.*;
+import nacaLib.program.Paragraph;
+import nacaLib.varEx.DataSection;
 
 public class Main extends OnlineProgram
 {

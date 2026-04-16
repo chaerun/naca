@@ -20,27 +20,18 @@ package parser.Cobol.elements;
 
 import java.util.ListIterator;
 import java.util.NoSuchElementException;
-
-import jlib.xml.Tag;
-
 import lexer.CBaseToken;
-import lexer.CReservedKeyword;
 import lexer.CTokenType;
 import lexer.Cobol.CCobolKeywordList;
-
+import org.apache.xml.utils.StringVector;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-
-import org.apache.xml.utils.StringVector;
-
-
 import parser.Cobol.CCobolElement;
+import semantic.CBaseEntityFactory;
 import semantic.CBaseExternalEntity;
 import semantic.CBaseLanguageEntity;
-import semantic.CBaseEntityFactory;
 import semantic.CEntityInline;
 import utils.CGlobalEntityCounter;
-import utils.CRulesManager;
 import utils.Transcoder;
 import utils.modificationsReporter.Reporter;
 

@@ -19,9 +19,6 @@ import java.sql.Timestamp;
 import java.sql.Types;
 import java.util.Date;
 
-import jlib.misc.NumberParser;
-
-
 public class ColValueTimestamp extends ColValue
 {
 	public ColValueTimestamp(String csName, Timestamp timestampValue)

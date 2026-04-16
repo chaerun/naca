@@ -19,11 +19,9 @@
 package utils;
 
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
-
 import javax.xml.transform.OutputKeys;
 import javax.xml.transform.Source;
 import javax.xml.transform.Transformer;
@@ -32,7 +30,6 @@ import javax.xml.transform.TransformerException;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
-
 import jlib.engine.NotificationEngine;
 import jlib.log.Log;
 import jlib.misc.FileSystem;
@@ -41,9 +38,7 @@ import jlib.xml.Tag;
 import lexer.CBaseLexer;
 import lexer.CBaseToken;
 import lexer.CTokenList;
-
 import org.w3c.dom.Document;
-
 import parser.CBaseElement;
 import parser.CParser;
 import semantic.CBaseLanguageEntity;

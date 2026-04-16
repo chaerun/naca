@@ -18,15 +18,12 @@ import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
 import jlib.exception.ProgrammingException;
 import jlib.exception.TechnicalException;
 import jlib.log.Log;
 import jlib.misc.CurrentDateInfo;
 import jlib.misc.DBIOAccounting;
 import jlib.misc.DBIOAccountingType;
-import jlib.misc.FileIOAccounting;
-import jlib.misc.FileIOAccountingType;
 import jlib.misc.StopWatch;
 
 public class DbPreparedStatement

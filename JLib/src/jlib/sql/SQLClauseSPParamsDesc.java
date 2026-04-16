@@ -15,15 +15,8 @@
  */
 package jlib.sql;
 
-/**
- * 
- */
-
 import java.sql.ResultSet;
 import java.util.ArrayList;
-
-import jlib.sql.DbPreparedCallableStatement;
-import jlib.sql.StoredProcParamDescBase;
 
 
 /**

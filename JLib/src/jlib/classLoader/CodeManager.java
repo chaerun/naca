@@ -21,11 +21,8 @@ import java.lang.management.MemoryType;
 import java.lang.reflect.Constructor;
 import java.util.ArrayList;
 import java.util.List;
-
 import javax.management.NotificationEmitter;
-
 import jlib.misc.FileSystem;
-import jlib.misc.StringRef;
 import jlib.misc.StringUtil;
 
 public class CodeManager

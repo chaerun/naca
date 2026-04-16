@@ -17,10 +17,7 @@ package jlib.sqlMapper;
 
 import java.sql.ResultSet;
 import java.util.ArrayList;
-
 import jlib.exception.TechnicalException;
-import jlib.sql.ColValue;
-import jlib.sql.ColValueCollection;
 import jlib.sql.DbAccessor;
 import jlib.sql.SQLClause;
 

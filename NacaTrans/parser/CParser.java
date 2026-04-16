@@ -18,14 +18,12 @@
  */
 package parser;
 
-import javax.xml.parsers.*;
-
-import org.w3c.dom.*;
-
-import utils.Transcoder;
-
-import lexer.*;
-
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+import lexer.CTokenList;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
 
 /*
 			builder = DocumentBuilderFactory.newInstance().newDocumentBuilder();

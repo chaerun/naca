@@ -14,11 +14,9 @@ package nacaLib.varEx;
 
 import jlib.log.Log;
 import jlib.misc.BaseDataFile;
-import jlib.misc.FileEndOfLine;
 import jlib.misc.RecordLengthDefinition;
 import nacaLib.base.CJMapObject;
 import nacaLib.basePrgEnv.BaseEnvironment;
-import nacaLib.basePrgEnv.BaseResourceManager;
 import nacaLib.basePrgEnv.BaseSession;
 import nacaLib.basePrgEnv.FileManagerEntry;
 

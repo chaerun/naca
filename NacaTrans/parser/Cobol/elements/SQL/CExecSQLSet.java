@@ -18,19 +18,13 @@ package parser.Cobol.elements.SQL;
 import lexer.CBaseToken;
 import lexer.CTokenType;
 import lexer.Cobol.CCobolKeywordList;
-
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-
-import parser.Cobol.CCobolParser;
 import parser.expression.CTerminal;
-
 import semantic.CBaseEntityFactory;
 import semantic.CBaseLanguageEntity;
 import semantic.CDataEntity;
-import semantic.SQL.CEntitySQLRollBack;
 import semantic.SQL.CEntitySQLSet;
-import semantic.Verbs.CEntityDivide;
 import utils.Transcoder;
 
 /**

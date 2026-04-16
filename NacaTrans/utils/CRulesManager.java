@@ -20,9 +20,8 @@ package utils;
 
 import java.util.Hashtable;
 import java.util.Vector;
-
-import jlib.misc.StringUtil;
-import jlib.xml.*;
+import jlib.xml.Tag;
+import jlib.xml.TagCursor;
 
 /**
  * @author sly

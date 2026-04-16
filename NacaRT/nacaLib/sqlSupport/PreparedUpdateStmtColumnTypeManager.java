@@ -8,18 +8,11 @@ package nacaLib.sqlSupport;
 
 import java.util.ArrayList;
 import java.util.Hashtable;
-
-import javax.print.attribute.HashAttributeSet;
-
 import jlib.misc.ArrayFixDyn;
-import jlib.misc.StringUtil;
-import jlib.sql.BaseDbColDefinition;
-import jlib.sql.BaseDbColDefinitionFactory;
 import jlib.sql.DbConnectionBase;
 import jlib.sql.OracleColumnDefinition;
 import jlib.sql.OracleTableDefinition;
 import jlib.sql.OracleTableDefinitionManager;
-import jlib.sql.SQLColumnType;
 
 public class PreparedUpdateStmtColumnTypeManager extends PreparedStmtColumnTypeManager
 {

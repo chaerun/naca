@@ -15,7 +15,6 @@ package semantic.expression;
 import generate.CBaseLanguageExporter;
 import semantic.CBaseEntityFactory;
 import semantic.CDataEntity;
-import semantic.CDataEntity.CDataEntityType;
 import utils.CObjectCatalog;
 
 public abstract class CEntityBoolean extends CDataEntity

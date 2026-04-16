@@ -25,9 +25,6 @@
  */
 package nacaLib.varEx;
 
-import nacaLib.basePrgEnv.BaseProgramManager;
-import nacaLib.tempCache.TempCache;
-import nacaLib.tempCache.TempCacheLocator;
 import jlib.misc.AsciiEbcdicConverter;
 import jlib.misc.NumberParser;
 

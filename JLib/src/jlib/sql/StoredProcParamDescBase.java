@@ -18,10 +18,7 @@ package jlib.sql;
 import java.sql.DatabaseMetaData;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
-import jlib.misc.CoupleNameValueItem;
 import jlib.misc.ListCoupleRender;
-
 
 /**
  *

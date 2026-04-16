@@ -15,16 +15,9 @@
  */
 package nacaLib.sqlSupport;
 
-import java.sql.CallableStatement;
 import java.sql.SQLException;
-import java.sql.Types;
-import java.util.ArrayList;
-
 import jlib.log.Log;
 import jlib.sql.DbConnectionBase;
-import jlib.sql.DbPreparedCallableStatement;
-import jlib.sql.SQLTypeOperation;
-import jlib.sql.StoredProcParamDescBase;
 import nacaLib.basePrgEnv.BaseEnvironment;
 import nacaLib.basePrgEnv.BaseProgramManager;
 import nacaLib.program.Paragraph;

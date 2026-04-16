@@ -18,7 +18,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.LinkedList;
 import java.util.concurrent.atomic.AtomicBoolean;
-
 import jlib.log.Log;
 import jlib.misc.CurrentDateInfo;
 import jlib.misc.JVMReturnCodeManager;
@@ -38,12 +37,10 @@ import nacaLib.base.CJMapObject;
 import nacaLib.exceptions.AbortSessionException;
 import nacaLib.misc.CCommarea;
 import nacaLib.misc.KeyPressed;
-import nacaLib.sqlSupport.CSQLStatus;
 import nacaLib.sqlSupport.SQLConnection;
 import nacaLib.tempCache.TempCache;
 import nacaLib.tempCache.TempCacheLocator;
 import nacaLib.varEx.Var;
-
 import org.w3c.dom.Document;
 
 public abstract class BaseEnvironment extends CJMapObject implements SessionEnvironmentRequester

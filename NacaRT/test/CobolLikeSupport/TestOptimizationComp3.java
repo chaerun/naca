@@ -10,7 +10,6 @@
  * Copyright (c) 2005, 2006, 2007, 2008 Publicitas SA.
  * Licensed under GPL (GPL-LICENSE.txt) license.
  */
-import jlib.misc.StopWatch;
 import idea.onlinePrgEnv.OnlineProgram;
 import nacaLib.varEx.DataSection;
 import nacaLib.varEx.Var;

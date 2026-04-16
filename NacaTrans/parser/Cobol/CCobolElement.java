@@ -18,8 +18,6 @@
  */
 package parser.Cobol;
 
-
-
 import lexer.CBaseToken;
 import lexer.CTokenList;
 import lexer.CTokenType;
@@ -27,10 +25,28 @@ import lexer.Cobol.CCobolKeywordList;
 import parser.CFunctionIdentifier;
 import parser.CIdentifier;
 import parser.CLanguageElement;
-import parser.condition.*;
-import parser.expression.*;
+import parser.condition.CCondAndStatement;
+import parser.condition.CCondDifferentStatement;
+import parser.condition.CCondEqualsStatement;
+import parser.condition.CCondGreaterStatement;
+import parser.condition.CCondIsAll;
+import parser.condition.CCondIsAlphabetic;
+import parser.condition.CCondIsNumeric;
+import parser.condition.CCondLessStatement;
+import parser.condition.CCondNotStatement;
+import parser.condition.CCondOrStatement;
+import parser.expression.CConstantTerminal;
+import parser.expression.CExpression;
+import parser.expression.CIdentifierTerminal;
+import parser.expression.CLengthOfExpression;
+import parser.expression.CNumberTerminal;
+import parser.expression.COppositeExpression;
+import parser.expression.CProdExpression;
+import parser.expression.CStringTerminal;
+import parser.expression.CSumExpression;
+import parser.expression.CTermExpression;
+import parser.expression.CTerminal;
 import utils.CGlobalEntityCounter;
-import utils.NacaTransAssertException;
 import utils.Transcoder;
 import utils.modificationsReporter.Reporter;
 

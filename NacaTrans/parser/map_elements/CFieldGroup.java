@@ -20,12 +20,8 @@ package parser.map_elements;
 
 import lexer.CReservedKeyword;
 import lexer.CTokenList;
-
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-
-
-
 import semantic.CBaseEntityFactory;
 import semantic.CBaseLanguageEntity;
 import semantic.CEntityStructure;
@@ -33,7 +29,6 @@ import semantic.expression.CEntityString;
 import semantic.forms.CEntityResourceField;
 import semantic.forms.CResourceStrings;
 import utils.CEntityHierarchy;
-import utils.Transcoder;
 
 /**
  * @author U930CV

@@ -18,8 +18,6 @@
  */
 package nacaLib.varEx;
 
-
-import jlib.misc.Comp3Support;
 import nacaLib.debug.BufferSpy;
 import nacaLib.sqlSupport.CSQLItemType;
 import nacaLib.tempCache.CStr;

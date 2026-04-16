@@ -19,7 +19,6 @@
 package nacaLib.sqlSupport;
 
 import jlib.log.Log;
-import jlib.log.StackStraceSupport;
 import nacaLib.base.CJMapObject;
 import nacaLib.basePrgEnv.BaseEnvironment;
 import nacaLib.basePrgEnv.BaseProgramManager;

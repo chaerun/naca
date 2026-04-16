@@ -13,8 +13,6 @@
 package generate.fpacjava;
 
 import generate.CBaseLanguageExporter;
-import semantic.CDataEntity;
-import semantic.CDataEntity.CDataEntityType;
 import semantic.Verbs.CEntitySubtractTo;
 import utils.CObjectCatalog;
 

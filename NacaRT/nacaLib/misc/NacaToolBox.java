@@ -14,10 +14,8 @@ package nacaLib.misc;
 
 import idea.onlinePrgEnv.OnlineEnvironment;
 import idea.onlinePrgEnv.OnlineSession;
-
 import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.text.Format;
@@ -25,7 +23,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.Random;
-
 import jlib.log.AssertException;
 import jlib.log.Log;
 import jlib.misc.AsciiEbcdicConverter;
@@ -35,13 +32,11 @@ import jlib.misc.DateUtil;
 import jlib.misc.EnvironmentVar;
 import jlib.misc.FileEndOfLine;
 import jlib.misc.FileSystem;
-import jlib.misc.FtpUtil;
 import jlib.misc.JVMReturnCodeManager;
 import jlib.misc.LineRead;
 import jlib.misc.LogicalFileDescriptor;
 import jlib.misc.NumberParser;
 import jlib.misc.StringUtil;
-import jlib.sql.DbConnectionBase;
 import nacaLib.base.CJMapObject;
 import nacaLib.basePrgEnv.BaseProgramLoader;
 import nacaLib.basePrgEnv.BaseProgramManager;

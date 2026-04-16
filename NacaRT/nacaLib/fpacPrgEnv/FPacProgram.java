@@ -13,10 +13,7 @@
 package nacaLib.fpacPrgEnv;
 
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.Date;
-import java.util.GregorianCalendar;
-
 import jlib.misc.AsciiEbcdicConverter;
 import jlib.misc.StringUtil;
 import nacaLib.basePrgEnv.BaseCESMManager;

@@ -16,14 +16,7 @@
 package nacaLib.sqlSupport;
 
 import java.sql.CallableStatement;
-import java.sql.SQLException;
-import java.util.ArrayList;
-
-import jlib.sql.ColDescriptionInfo;
 import jlib.sql.DbPreparedCallableStatement;
-import jlib.sql.StoredProcParamDescBase;
-
-import nacaLib.varEx.Var;
 
 /**
  *

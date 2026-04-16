@@ -12,22 +12,17 @@
  */
 package nacaLib.varEx;
 
-//import nacaLib.program.Var;
 import java.util.Hashtable;
 import java.util.SortedSet;
-
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
-
 import jlib.misc.ArrayDyn;
 import jlib.misc.ArrayFix;
 import jlib.misc.ArrayFixDyn;
 import jlib.misc.AsciiEbcdicConverter;
-import nacaLib.basePrgEnv.BaseProgramManager;
 import nacaLib.programPool.SharedProgramInstanceData;
 import nacaLib.tempCache.TempCache;
 import nacaLib.tempCache.TempCacheLocator;
-
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;

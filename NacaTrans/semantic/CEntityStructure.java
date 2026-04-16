@@ -18,20 +18,14 @@
  */
 package semantic;
 
-import generate.*;
-
+import generate.CBaseLanguageExporter;
 import java.util.ArrayList;
-import java.util.ListIterator;
-import java.util.NoSuchElementException;
 import java.util.Vector;
-
 import jlib.misc.NumberParser;
-
-import parser.CIdentifier;
 import parser.expression.CExpression;
-
 import semantic.expression.CBaseEntityExpression;
-import utils.*;
+import utils.CObjectCatalog;
+import utils.Transcoder;
 import utils.CobolTranscoder.OrderedName;
 
 /**

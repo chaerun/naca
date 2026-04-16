@@ -15,13 +15,8 @@ package parser.Cobol.elements.SQL;
 import lexer.CBaseToken;
 import lexer.CTokenType;
 import lexer.Cobol.CCobolKeywordList;
-
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-
-import parser.Cobol.CCobolElement;
-import parser.Cobol.elements.CExecStatement;
-
 import semantic.CBaseEntityFactory;
 import semantic.CBaseLanguageEntity;
 import semantic.SQL.CEntitySQLSessionDrop;

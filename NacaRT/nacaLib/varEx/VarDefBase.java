@@ -25,17 +25,13 @@ import jlib.misc.ArrayFix;
 import jlib.misc.ArrayFixDyn;
 import jlib.misc.IntegerRef;
 import nacaLib.base.CJMapObject;
-import nacaLib.base.JmxGeneralStat;
-import nacaLib.basePrgEnv.BaseEnvironment;
 import nacaLib.basePrgEnv.BaseProgramManager;
 import nacaLib.basePrgEnv.BaseResourceManager;
 import nacaLib.bdb.BtreeSegmentKeyTypeFactory;
 import nacaLib.exceptions.OccursOverflowException;
 import nacaLib.programPool.SharedProgramInstanceData;
-import nacaLib.sqlSupport.CSQLStatus;
 import nacaLib.tempCache.TempCache;
 import nacaLib.tempCache.TempCacheLocator;
-
 
 /**
  * @author  U930DI  TODO To change the template for this generated type comment go to  Window - Preferences - Java - Code Style - Code Templates

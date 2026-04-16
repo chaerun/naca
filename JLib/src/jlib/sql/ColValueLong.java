@@ -16,8 +16,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Types;
 
-import jlib.misc.NumberParser;
-
 public class ColValueLong extends ColValue
 {
 	public ColValueLong(String csName, long lValue)

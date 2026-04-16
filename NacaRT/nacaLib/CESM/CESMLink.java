@@ -25,14 +25,11 @@
  */
 package nacaLib.CESM;
 
-import java.util.ArrayList;
-
 import jlib.log.Log;
 import nacaLib.base.CJMapObject;
 import nacaLib.basePrgEnv.BaseEnvironment;
 import nacaLib.basePrgEnv.BaseProgramLoader;
 import nacaLib.misc.CCommarea;
-import nacaLib.varEx.CCallParam;
 import nacaLib.varEx.Var;
 
 public class CESMLink extends CJMapObject

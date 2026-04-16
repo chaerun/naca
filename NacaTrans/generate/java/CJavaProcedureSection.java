@@ -21,7 +21,6 @@ package generate.java;
 import generate.CBaseLanguageExporter;
 import semantic.CEntityProcedureSection;
 import utils.CObjectCatalog;
-import utils.Transcoder;
 
 /**
  * @author sly

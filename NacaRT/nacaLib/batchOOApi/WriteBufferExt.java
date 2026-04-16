@@ -12,7 +12,6 @@
  */
 package nacaLib.batchOOApi;
 
-import jlib.misc.FileEndOfLine;
 import nacaLib.debug.BufferSpy;
 import nacaLib.varEx.VarBufferPos;
 

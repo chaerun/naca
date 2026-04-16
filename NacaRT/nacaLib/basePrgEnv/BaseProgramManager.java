@@ -13,11 +13,9 @@
 package nacaLib.basePrgEnv;
 
 import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Hashtable;
-
 import jlib.log.Log;
 import jlib.misc.ArrayDyn;
 import jlib.misc.ArrayFix;
@@ -29,7 +27,6 @@ import nacaLib.exceptions.CESMReturnException;
 import nacaLib.exceptions.CGotoException;
 import nacaLib.exceptions.CGotoOtherSectionException;
 import nacaLib.exceptions.CGotoOtherSectionParagraphException;
-import nacaLib.exceptions.NacaRTException;
 import nacaLib.mapSupport.Map;
 import nacaLib.misc.KeyPressed;
 import nacaLib.program.CJMapRunnable;

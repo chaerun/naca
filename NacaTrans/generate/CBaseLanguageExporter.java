@@ -18,8 +18,6 @@
  */
 package generate;
 
-//import java.io.FileNotFoundException;
-//import java.io.FileOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -28,23 +26,11 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.Date;
-
 import jlib.misc.FileSystem;
 import jlib.misc.StringRef;
-
 import parser.CGlobalCommentContainer;
-//
-//import javax.xml.parsers.*;
-//import javax.xml.transform.*;
-//import javax.xml.transform.dom.*;
-//import javax.xml.transform.stream.*;
-//
-//import org.w3c.dom.*;
-
 import semantic.CEntityComment;
 import utils.COriginalLisiting;
-import utils.SQLSyntaxConverter.SQLFunctionConvertion;
-import utils.SQLSyntaxConverter.SQLSyntaxConverter;
 
 /**
  * @author sly

@@ -21,8 +21,15 @@ import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.util.ArrayList;
-
-import nacaLib.basePrgEnv.BaseEnvironment;
+import jlib.log.Log;
+import jlib.misc.CurrentDateInfo;
+import jlib.misc.DBIOAccounting;
+import jlib.misc.DBIOAccountingType;
+import jlib.misc.StopWatch;
+import jlib.sql.DbConnectionBase;
+import jlib.sql.DbPreparedStatement;
+import jlib.sql.SQLLoadStatus;
+import jlib.threads.ThreadPoolRequest;
 import nacaLib.sqlSupport.RecordColTypeManagerBase;
 import nacaLib.sqlSupport.RecordColTypeManagerChar;
 import nacaLib.sqlSupport.RecordColTypeManagerDate;
@@ -32,17 +39,6 @@ import nacaLib.sqlSupport.RecordColTypeManagerDecimalLong;
 import nacaLib.sqlSupport.RecordColTypeManagerOther;
 import nacaLib.sqlSupport.RecordColTypeManagerTimestamp;
 import nacaLib.sqlSupport.RecordColTypeManagerVarchar;
-import jlib.log.Log;
-import jlib.misc.CurrentDateInfo;
-import jlib.misc.DBIOAccounting;
-import jlib.misc.DBIOAccountingType;
-import jlib.misc.StopWatch;
-import jlib.sql.BaseDbColDefinition;
-import jlib.sql.BaseDbColDefinitionFactory;
-import jlib.sql.DbConnectionBase;
-import jlib.sql.DbPreparedStatement;
-import jlib.sql.SQLLoadStatus;
-import jlib.threads.ThreadPoolRequest;
 
 /**
  *

@@ -15,18 +15,13 @@
  */
 package jlib.sql;
 
-import java.sql.Connection;
 import java.sql.DatabaseMetaData;
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Hashtable;
-
 import jlib.log.Log;
-import jlib.misc.StringUtil;
-
 
 /**
  *

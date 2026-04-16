@@ -12,7 +12,6 @@
  */
 package semantic;
 
-import parser.CIdentifier;
 import generate.CBaseLanguageExporter;
 import utils.CObjectCatalog;
 

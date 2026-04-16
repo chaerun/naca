@@ -13,7 +13,6 @@
 package nacaLib.programStructure;
 
 import java.util.ArrayList;
-
 import nacaLib.basePrgEnv.BaseEnvironment;
 import nacaLib.basePrgEnv.BaseProgram;
 import nacaLib.calledPrgSupport.BaseCalledPrgPublicArgPositioned;
@@ -22,7 +21,6 @@ import nacaLib.varEx.DataSection;
 import nacaLib.varEx.Var;
 import nacaLib.varEx.VarBuffer;
 import nacaLib.varEx.VarDefBuffer;
-import nacaLib.varEx.VarInternalInt;
 
 public class DataDivision extends Division
 {

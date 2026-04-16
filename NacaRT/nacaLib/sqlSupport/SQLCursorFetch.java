@@ -18,12 +18,8 @@
  */
 package nacaLib.sqlSupport;
 
-import jlib.log.Log;
-import nacaLib.base.CJMapObject;
 import nacaLib.program.Paragraph;
 import nacaLib.program.Section;
-import nacaLib.tempCache.TempCache;
-import nacaLib.tempCache.TempCacheLocator;
 import nacaLib.varEx.Var;
 import nacaLib.varEx.VarAndEdit;
 

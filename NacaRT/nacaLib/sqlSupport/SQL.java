@@ -14,27 +14,19 @@ package nacaLib.sqlSupport;
 
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Hashtable;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
-
-import oracle.sql.ROWID;
-
 import jlib.log.Log;
 import jlib.misc.ArrayDyn;
 import jlib.misc.ArrayFix;
 import jlib.misc.ArrayFixDyn;
 import jlib.misc.DBIOAccounting;
 import jlib.misc.DBIOAccountingType;
-import jlib.misc.NumberParser;
-import jlib.misc.StringUtil;
 import jlib.misc.ThreadSafeCounter;
 import jlib.sql.DbConnectionBase;
-import jlib.sql.OracleColumnDefinition;
-import jlib.sql.SQLColumnType;
 import jlib.sql.SQLTypeOperation;
 import nacaLib.accounting.AccountingRecordTrans;
 import nacaLib.base.CJMapObject;
@@ -48,6 +40,7 @@ import nacaLib.tempCache.TempCache;
 import nacaLib.tempCache.TempCacheLocator;
 import nacaLib.varEx.Var;
 import nacaLib.varEx.VarAndEdit;
+import oracle.sql.ROWID;
 
 public class SQL
 {

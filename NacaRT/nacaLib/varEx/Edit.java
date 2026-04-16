@@ -18,20 +18,21 @@
  */
 package nacaLib.varEx;
 
+import jlib.log.AssertException;
 import jlib.log.Log;
-
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-
-import jlib.log.*;
-import jlib.misc.StringUtil;
-import nacaLib.basePrgEnv.BaseProgramManager;
-import nacaLib.mapSupport.*;
+import nacaLib.mapSupport.MapFieldAttrColor;
+import nacaLib.mapSupport.MapFieldAttrFill;
+import nacaLib.mapSupport.MapFieldAttrHighlighting;
+import nacaLib.mapSupport.MapFieldAttrIntensity;
+import nacaLib.mapSupport.MapFieldAttrJustify;
+import nacaLib.mapSupport.MapFieldAttrModified;
+import nacaLib.mapSupport.MapFieldAttrProtection;
+import nacaLib.mapSupport.MapFieldAttribute;
 import nacaLib.mathSupport.MathBase;
 import nacaLib.misc.StringAsciiEbcdicUtil;
 import nacaLib.tempCache.CStr;
-import nacaLib.tempCache.TempCache;
-import nacaLib.tempCache.TempCacheLocator;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
 
 /**
  * @author U930DI

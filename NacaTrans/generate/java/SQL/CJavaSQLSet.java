@@ -15,10 +15,9 @@
  */
 package generate.java.SQL;
 
-import parser.Cobol.elements.SQL.SQLSetDateTimeType;
 import generate.CBaseLanguageExporter;
+import parser.Cobol.elements.SQL.SQLSetDateTimeType;
 import semantic.CDataEntity.CDataEntityType;
-import semantic.SQL.CEntitySQLCursor;
 import semantic.SQL.CEntitySQLSet;
 import utils.CObjectCatalog;
 

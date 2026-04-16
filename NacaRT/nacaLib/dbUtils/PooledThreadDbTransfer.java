@@ -15,7 +15,6 @@
  */
 package nacaLib.dbUtils;
 
-import nacaLib.basePrgEnv.BaseEnvironment;
 import jlib.sql.DbConnectionBase;
 import jlib.threads.PoolOfThreads;
 import jlib.threads.PooledThread;

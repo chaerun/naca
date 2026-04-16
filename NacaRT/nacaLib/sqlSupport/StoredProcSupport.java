@@ -19,10 +19,7 @@ import java.sql.DatabaseMetaData;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-
-import jlib.log.Log;
 import jlib.sql.DbConnectionBase;
-import jlib.sql.StoredProcParamDescBase;
 
 /**
  *

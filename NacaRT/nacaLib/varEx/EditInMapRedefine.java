@@ -18,15 +18,10 @@
  */
 package nacaLib.varEx;
 
-
 import jlib.misc.AsciiEbcdicConverter;
-import nacaLib.basePrgEnv.BaseProgramLoader;
 import nacaLib.basePrgEnv.BaseProgramManager;
-import nacaLib.programPool.SharedProgramInstanceData;
-import nacaLib.programPool.SharedProgramInstanceDataCatalog;
 import nacaLib.tempCache.TempCache;
 import nacaLib.tempCache.TempCacheLocator;
-
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 

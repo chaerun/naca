@@ -19,11 +19,8 @@
 package nacaLib.sqlSupport;
 
 import java.sql.SQLException;
-
 import jlib.misc.StringUtil;
-
 import nacaLib.base.CJMapObject;
-import nacaLib.basePrgEnv.BaseEnvironment;
 import nacaLib.program.Paragraph;
 import nacaLib.program.Section;
 import nacaLib.tempCache.TempCache;

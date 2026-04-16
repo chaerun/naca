@@ -18,20 +18,14 @@
  */
 package parser.Cobol.elements.SQL;
 
-import generate.java.CJavaStructure;
-
 import java.util.Hashtable;
 import java.util.Vector;
-
-import javax.swing.text.html.HTMLDocument.HTMLReader.IsindexAction;
-
 import lexer.CBaseToken;
 import lexer.CTokenType;
 import lexer.Cobol.CCobolKeywordList;
-
+import org.apache.xml.utils.StringVector;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-
 import parser.CIdentifier;
 import parser.expression.CConstantTerminal;
 import parser.expression.CIdentifierTerminal;
@@ -48,9 +42,6 @@ import utils.CGlobalEntityCounter;
 import utils.Transcoder;
 import utils.SQLSyntaxConverter.SQLSyntaxConverter;
 import utils.modificationsReporter.Reporter;
-
-import org.apache.bcel.generic.INSTANCEOF;
-import org.apache.xml.utils.StringVector;
 
 /**
  * @author U930DI

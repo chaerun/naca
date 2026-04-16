@@ -7,11 +7,8 @@
 package nacaLib.sqlSupport;
 
 import java.sql.Date;
-import java.sql.ParameterMetaData;
 import java.sql.SQLException;
 import java.sql.Timestamp;
-import java.sql.Types;
-
 import jlib.log.Log;
 import jlib.misc.CurrentDateInfo;
 import jlib.misc.StringUtil;
@@ -20,7 +17,6 @@ import jlib.sql.OracleColumnDefinition;
 import jlib.sql.SQLColumnType;
 import nacaLib.basePrgEnv.BaseResourceManager;
 import nacaLib.exceptions.AbortSessionException;
-import oracle.jdbc.OracleParameterMetaData;
 import oracle.jdbc.OraclePreparedStatement;
 import oracle.jdbc.OracleTypes;
 import oracle.sql.NUMBER;

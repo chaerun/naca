@@ -8,17 +8,12 @@ package nacaLib.sqlSupport;
 
 import java.util.ArrayList;
 import java.util.Hashtable;
-
 import jlib.log.Log;
 import jlib.misc.ArrayFixDyn;
-import jlib.misc.StringUtil;
-import jlib.sql.BaseDbColDefinition;
-import jlib.sql.BaseDbColDefinitionFactory;
 import jlib.sql.DbConnectionBase;
 import jlib.sql.OracleColumnDefinition;
 import jlib.sql.OracleTableDefinition;
 import jlib.sql.OracleTableDefinitionManager;
-import jlib.sql.SQLColumnType;
 
 public class PreparedInsertStmtColumnTypeManager extends PreparedStmtColumnTypeManager
 {

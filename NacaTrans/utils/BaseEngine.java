@@ -12,14 +12,11 @@
  */
 package utils;
 
-import org.apache.log4j.Logger;
-
+import jlib.xml.Tag;
+import lexer.CTokenList;
 import semantic.CBaseLanguageEntity;
 import utils.DCLGenConverter.DCLGenConverter;
 import utils.SQLSyntaxConverter.SQLSyntaxConverter;
-
-import jlib.xml.Tag;
-import lexer.CTokenList;
 
 /**
  * @author S. Charton

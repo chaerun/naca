@@ -12,7 +12,6 @@
  */
 package nacaLib.CESM;
 
-import idea.onlinePrgEnv.OnlineEnvironment;
 import idea.onlinePrgEnv.OnlineSession;
 import nacaLib.base.CJMapObject;
 import nacaLib.basePrgEnv.BaseEnvironment;

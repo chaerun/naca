@@ -24,8 +24,7 @@
  * Window&gt;Preferences&gt;Java&gt;Code Generation&gt;Code and Comments
  */
 package nacaLib.stringSupport;
-// import nacaLib.base.*;
-import nacaLib.varEx.CobolConstant;
+
 import nacaLib.varEx.CobolConstantHighValue;
 import nacaLib.varEx.CobolConstantLowValue;
 import nacaLib.varEx.CobolConstantSpace;

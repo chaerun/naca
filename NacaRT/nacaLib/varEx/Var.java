@@ -19,16 +19,13 @@
 package nacaLib.varEx;
 
 import java.math.BigDecimal;
-
-import nacaLib.basePrgEnv.BaseProgramManager;
+import jlib.log.Log;
 import nacaLib.debug.BufferSpy;
 import nacaLib.mathSupport.MathBase;
 import nacaLib.misc.StringAsciiEbcdicUtil;
 import nacaLib.tempCache.CStr;
 import nacaLib.tempCache.TempCache;
 import nacaLib.tempCache.TempCacheLocator;
-import jlib.log.Log;
-import jlib.misc.*;
 
 /**
  * @author U930DI

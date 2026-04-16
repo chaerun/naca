@@ -15,10 +15,6 @@
  */
 package nacaLib.bdb;
 
-import java.util.ArrayList;
-
-import nacaLib.varEx.SortKeySegmentDefinition;
-
 import jlib.misc.ArrayDyn;
 import jlib.misc.ArrayFix;
 import jlib.misc.ArrayFixDyn;
@@ -26,6 +22,7 @@ import jlib.misc.LineRead;
 import jlib.misc.LittleEndingUnsignBinaryBufferStorage;
 import jlib.misc.NumberParser;
 import jlib.misc.StringUtil;
+import nacaLib.varEx.SortKeySegmentDefinition;
 
 /**
  *

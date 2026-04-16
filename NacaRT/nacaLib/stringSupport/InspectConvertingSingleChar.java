@@ -12,12 +12,10 @@
  */
 package nacaLib.stringSupport;
 
-import nacaLib.tempCache.CStr;
 import nacaLib.varEx.Var;
 
 public class InspectConvertingSingleChar
 {
 	private Var m_var = null;
-	
 	
 }

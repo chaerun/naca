@@ -20,14 +20,11 @@ package parser.Cobol.elements;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-
 import parser.expression.CExpression;
-import semantic.CBaseLanguageEntity;
 import semantic.CBaseEntityFactory;
-import semantic.Verbs.CEntityCase;
+import semantic.CBaseLanguageEntity;
 import semantic.Verbs.CEntityCaseSearchAll;
 import semantic.expression.CBaseEntityCondition;
-
 
 /**
  * @author U930CV

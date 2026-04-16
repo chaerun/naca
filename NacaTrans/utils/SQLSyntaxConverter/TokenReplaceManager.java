@@ -8,10 +8,7 @@ package utils.SQLSyntaxConverter;
 
 import java.util.ArrayList;
 import java.util.Hashtable;
-import java.util.ListIterator;
-
 import lexer.CBaseToken;
-import lexer.CTokenList;
 import lexer.CTokenType;
 
 public class TokenReplaceManager

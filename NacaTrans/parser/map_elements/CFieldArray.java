@@ -20,20 +20,16 @@ package parser.map_elements;
 
 import java.util.ListIterator;
 import java.util.NoSuchElementException;
-
 import lexer.CReservedKeyword;
 import lexer.CTokenList;
-
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-
 import semantic.CBaseEntityFactory;
 import semantic.CBaseLanguageEntity;
 import semantic.forms.CEntityResourceField;
 import semantic.forms.CEntityResourceFieldArray;
 import semantic.forms.CResourceStrings;
 import utils.NacaTransAssertException;
-import utils.Transcoder;
 
 /**
  * @author U930CV

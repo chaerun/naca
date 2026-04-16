@@ -14,21 +14,21 @@ package parser.map_elements;
 
 import jlib.xml.Tag;
 import jlib.xml.TagCursor;
-import lexer.*;
+import lexer.CBaseToken;
+import lexer.CReservedConstant;
+import lexer.CReservedKeyword;
+import lexer.CTokenList;
+import lexer.CTokenType;
 import lexer.BMS.CBMSConstantList;
 import lexer.BMS.CBMSKeywordList;
-
+import org.apache.xml.utils.StringVector;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-
-import org.apache.xml.utils.StringVector;
-
 import parser.BMS.CBMSElement;
 import semantic.CBaseEntityFactory;
 import semantic.CBaseLanguageEntity;
 import semantic.forms.CEntityResourceField;
 import semantic.forms.CResourceStrings;
-import utils.CEntityHierarchy;
 import utils.PosLineCol;
 import utils.Transcoder;
 

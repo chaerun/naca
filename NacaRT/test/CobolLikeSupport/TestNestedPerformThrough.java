@@ -12,11 +12,9 @@
  */
 
 import idea.onlinePrgEnv.OnlineProgram;
-import nacaLib.batchPrgEnv.BatchProgram; 
-import nacaLib.program.Paragraph; 
+import nacaLib.program.Paragraph;
 import nacaLib.program.Sentence;
 import nacaLib.varEx.DataSection;
-
 
 public class TestNestedPerformThrough extends OnlineProgram
 {

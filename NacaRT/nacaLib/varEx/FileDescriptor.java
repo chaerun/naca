@@ -12,13 +12,10 @@
  */
 package nacaLib.varEx;
 
-
-
 import jlib.log.Log;
 import jlib.misc.AdvancedFileDescriptorMode;
 import jlib.misc.BaseDataFile;
 import jlib.misc.BaseDataFileBuffered;
-import jlib.misc.DataFileLineReader;
 import jlib.misc.EnvironmentVar;
 import jlib.misc.LineRead;
 import jlib.misc.LittleEndingSignBinaryBufferStorage;

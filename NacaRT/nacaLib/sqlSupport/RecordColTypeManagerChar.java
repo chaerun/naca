@@ -15,17 +15,10 @@
  */
 package nacaLib.sqlSupport;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.Reader;
-import java.sql.Clob;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.sql.Types;
-
-import jlib.sql.DbPreparedStatement;
 import jlib.sql.LogSQLException;
 import nacaLib.basePrgEnv.BaseResourceManager;
 import nacaLib.varEx.VarBase;

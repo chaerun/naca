@@ -16,13 +16,11 @@
 package nacaLib.dbUtils;
 
 import java.util.ArrayList;
-
 import jlib.log.Log;
 import jlib.misc.BaseDataFile;
 import jlib.misc.DataFileLineReader;
 import jlib.misc.IntegerRef;
 import jlib.misc.LineRead;
-import jlib.misc.LogicalFileDescriptor;
 import jlib.misc.StringUtil;
 import jlib.sql.SQLLoadStatus;
 import nacaLib.basePrgEnv.BaseSession;

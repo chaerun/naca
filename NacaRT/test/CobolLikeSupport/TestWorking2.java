@@ -25,11 +25,9 @@
  */
 import idea.onlinePrgEnv.OnlineProgram;
 import jlib.log.Asserter;
-import jlib.log.Log;
 import nacaLib.program.Paragraph;
 import nacaLib.varEx.DataSection;
 import nacaLib.varEx.Var;
-
 
 public class TestWorking2 extends OnlineProgram
 {

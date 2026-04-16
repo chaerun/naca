@@ -11,11 +11,11 @@
  * Licensed under GPL (GPL-LICENSE.txt) license.
  */
 import idea.onlinePrgEnv.OnlineProgram;
-import nacaLib.varEx.*;
-import nacaLib.mapSupport.MapFieldAttrFill;
-import nacaLib.mapSupport.MapFieldAttrJustify;
-import nacaLib.program.*;
-
+import nacaLib.program.Paragraph;
+import nacaLib.varEx.DataSection;
+import nacaLib.varEx.Edit;
+import nacaLib.varEx.MapRedefine;
+import nacaLib.varEx.Var;
 
 /**
  * @author U930DI

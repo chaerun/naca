@@ -26,7 +26,6 @@ package generate.java.SQL;
  */
 import generate.CBaseLanguageExporter;
 import generate.SQLDumper;
-import semantic.CDataEntity;
 import semantic.SQL.CEntitySQLCloseStatement;
 import semantic.SQL.CEntitySQLCursor;
 import utils.CObjectCatalog;

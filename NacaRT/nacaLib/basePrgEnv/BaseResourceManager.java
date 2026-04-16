@@ -16,7 +16,6 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.Hashtable;
-
 import jlib.classLoader.CodeManager;
 import jlib.jmxMBean.JMXDumperGui;
 import jlib.misc.AsciiEbcdicConverter;
@@ -39,7 +38,6 @@ import nacaLib.appOpening.JmxAppOpener;
 import nacaLib.appOpening.OpenCalendarManager;
 import nacaLib.base.CJMapObject;
 import nacaLib.base.JmxGeneralStat;
-import nacaLib.batchPrgEnv.BatchResourceManager;
 import nacaLib.classLoad.CustomClassDynLoaderFactory;
 import nacaLib.fileConverter.CopyConverterClassLoader;
 import nacaLib.misc.SemanticContextDef;
@@ -47,7 +45,6 @@ import nacaLib.pathManager.PathsManager;
 import nacaLib.sqlSupport.SQLCode;
 import nacaLib.varEx.FileOrganization;
 import nacaLib.varEx.Pic9Comp3BufferSupport;
-
 
 public abstract class BaseResourceManager extends CJMapObject
 {

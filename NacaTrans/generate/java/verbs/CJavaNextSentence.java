@@ -21,7 +21,6 @@ package generate.java.verbs;
 import generate.CBaseLanguageExporter;
 import semantic.Verbs.CEntityNextSentence;
 import utils.CObjectCatalog;
-import utils.Transcoder;
 
 /**
  * @author sly

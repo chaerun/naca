@@ -19,22 +19,18 @@
 package parser.Cobol.elements;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.Vector;
-
 import lexer.CBaseToken;
 import lexer.CTokenType;
 import lexer.Cobol.CCobolKeywordList;
-
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-
 import parser.CCommentContainer;
 import parser.CIdentifier;
 import parser.CLanguageElement;
-import semantic.CDataEntity;
-import semantic.CBaseLanguageEntity;
 import semantic.CBaseEntityFactory;
+import semantic.CBaseLanguageEntity;
+import semantic.CDataEntity;
 import semantic.CEntityBloc;
 import semantic.CEntityProcedureDivision;
 import semantic.DeferredItem;

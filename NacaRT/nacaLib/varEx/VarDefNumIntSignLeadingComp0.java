@@ -19,16 +19,13 @@
 package nacaLib.varEx;
 
 import java.math.BigDecimal;
-
-import jlib.misc.*;
+import jlib.misc.NumberParser;
 import nacaLib.bdb.BtreeSegmentKeyTypeFactory;
 import nacaLib.debug.BufferSpy;
 import nacaLib.mathSupport.MathAdd;
 import nacaLib.misc.StringAsciiEbcdicUtil;
 import nacaLib.sqlSupport.CSQLItemType;
 import nacaLib.tempCache.CStr;
-import nacaLib.tempCache.CStrNumber;
-import nacaLib.tempCache.TempCacheLocator;
 
 /**
  * @author U930DI

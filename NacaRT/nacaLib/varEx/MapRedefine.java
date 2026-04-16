@@ -27,7 +27,6 @@ package nacaLib.varEx;
 
 import jlib.misc.AsciiEbcdicConverter;
 import nacaLib.tempCache.CStr;
-import nacaLib.tempCache.TempCacheLocator;
 
 public class MapRedefine extends Var
 {

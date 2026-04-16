@@ -6,11 +6,7 @@
  */
 package nacaLib.program;
 
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-
 import nacaLib.basePrgEnv.BaseProgram;
-import nacaLib.exceptions.NacaRTException;
 
 public class Sentence extends Paragraph
 {	

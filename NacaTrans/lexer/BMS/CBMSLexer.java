@@ -18,17 +18,12 @@
  */
 package lexer.BMS;
 
-import java.io.InputStream;
 import java.util.Vector;
-
-import utils.FileContentBuffer;
-
 import lexer.CBaseLexer;
 import lexer.CBaseToken;
 import lexer.CTokenComment;
 import lexer.CTokenString;
-
-
+import utils.FileContentBuffer;
 
 /**
  * @author U930CV

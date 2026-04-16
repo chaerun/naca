@@ -15,9 +15,7 @@
  */
 package jlib.polling;
 
-import java.io.File;
 import java.util.ArrayList;
-
 import jlib.threads.Timer;
 
 /**

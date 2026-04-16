@@ -14,9 +14,7 @@ package nacaLib.program;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-
 import nacaLib.basePrgEnv.BaseProgram;
-import nacaLib.basePrgEnv.BaseProgramManager;
 import nacaLib.exceptions.CGotoException;
 import nacaLib.exceptions.NacaRTException;
 

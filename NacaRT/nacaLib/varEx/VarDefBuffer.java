@@ -20,8 +20,6 @@ package nacaLib.varEx;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
-import java.util.Arrays;
-
 import jlib.log.Log;
 import jlib.misc.BaseDataFile;
 import nacaLib.basePrgEnv.BaseProgramManager;

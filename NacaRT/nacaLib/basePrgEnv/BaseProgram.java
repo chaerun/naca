@@ -22,16 +22,13 @@
  */
 package nacaLib.basePrgEnv;
 
-
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
 import jlib.log.Log;
 import jlib.misc.ConsoleInput;
 import jlib.misc.JVMReturnCodeManager;
 import jlib.misc.NumberParser;
 import jlib.misc.StringUtil;
-import jlib.sql.DbDriverId;
 import nacaLib.base.CJMapObject;
 import nacaLib.base.JmxGeneralStat;
 import nacaLib.debug.BufferSpy;

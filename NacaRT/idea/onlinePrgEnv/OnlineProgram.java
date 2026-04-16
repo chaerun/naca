@@ -12,19 +12,24 @@
  */
 package idea.onlinePrgEnv;
 
-
-import jlib.log.Log;
-
 import idea.manager.CESMManager;
+import jlib.log.Log;
 import nacaLib.basePrgEnv.BaseCESMManager;
 import nacaLib.basePrgEnv.BaseEnvironment;
 import nacaLib.basePrgEnv.BaseProgram;
-import nacaLib.mapSupport.*;
-import nacaLib.misc.*;
-import nacaLib.program.CompareResult;
+import nacaLib.mapSupport.MapFieldAttrColor;
+import nacaLib.mapSupport.MapFieldAttrHighlighting;
+import nacaLib.mapSupport.MapFieldAttrIntensity;
+import nacaLib.mapSupport.MapFieldAttrModified;
+import nacaLib.mapSupport.MapFieldAttrProtection;
+import nacaLib.mapSupport.MapFieldAttribute;
+import nacaLib.misc.KeyPressed;
 import nacaLib.tempCache.TempCache;
-import nacaLib.varEx.*;
-
+import nacaLib.varEx.ComparisonMode;
+import nacaLib.varEx.Edit;
+import nacaLib.varEx.Var;
+import nacaLib.varEx.VarAndEdit;
+import nacaLib.varEx.VarSectionDeclaration;
 
 /**
 * @author PJD

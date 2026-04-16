@@ -14,9 +14,7 @@ package generate.java.expressions;
 
 import semantic.CBaseEntityFactory;
 import semantic.expression.CBaseEntityCondition;
-import semantic.expression.CEntityConstant;
 import semantic.expression.CEntityTally;
-import semantic.expression.CEntityConstant.Value;
 import utils.modificationsReporter.Reporter;
 
 public class CJavaTally extends CEntityTally

@@ -20,10 +20,8 @@ package nacaLib.varEx;
 
 import jlib.misc.AsciiEbcdicConverter;
 import nacaLib.basePrgEnv.BaseProgram;
-import nacaLib.basePrgEnv.BaseProgramManager;
 import nacaLib.mapSupport.LocalizedString;
 import nacaLib.misc.NumberParserDec;
-
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 

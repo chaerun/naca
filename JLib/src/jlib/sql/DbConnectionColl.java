@@ -10,30 +10,22 @@
  * Copyright (c) 2005, 2006, 2007, 2008 Publicitas SA.
  * Licensed under LGPL (LGPL-LICENSE.txt) license.
  */
-
-
 package jlib.sql;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.ArrayList;
-import java.util.Hashtable;
 import java.util.LinkedList;
 import java.util.Properties;
 import java.util.SortedMap;
-
 import jlib.blowfish.Blowfish;
-//import jlib.log.Log;
-import jlib.log.Log;
 import jlib.misc.BaseJmxGeneralStat;
 import jlib.misc.EnvironmentVar;
 import jlib.misc.StopWatch;
 import jlib.misc.StringUtil;
 import jlib.misc.ThreadSafeCounter;
 import jlib.misc.Time_ms;
-
 
 /**
  * @author PJD

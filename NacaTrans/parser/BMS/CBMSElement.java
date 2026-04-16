@@ -19,14 +19,13 @@
 package parser.BMS;
 
 import jlib.xml.Tag;
-import jlib.xml.TagCursor;
-import lexer.*;
-
+import lexer.CBaseToken;
+import lexer.CReservedKeyword;
+import lexer.CTokenList;
+import lexer.CTokenType;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-
 import parser.CBaseElement;
-
 import semantic.CBaseEntityFactory;
 import semantic.CBaseLanguageEntity;
 import semantic.forms.CResourceStrings;

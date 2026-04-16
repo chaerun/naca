@@ -13,7 +13,6 @@
 package nacaLib.fpacPrgEnv;
 
 import nacaLib.tempCache.CStr;
-import nacaLib.tempCache.TempCacheLocator;
 import nacaLib.varEx.Var;
 import nacaLib.varEx.VarBase;
 import nacaLib.varEx.VarBuffer;

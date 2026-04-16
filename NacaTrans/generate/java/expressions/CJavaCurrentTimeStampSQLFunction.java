@@ -15,10 +15,8 @@
  */
 package generate.java.expressions;
 
-import parser.Cobol.elements.SQL.SQLSetDateTimeType;
 import generate.CBaseLanguageExporter;
 import semantic.expression.CEntityCurrentTimeStampSQLFunction;
-import semantic.expression.CEntityString;
 import utils.CObjectCatalog;
 import utils.Transcoder;
 import utils.SQLSyntaxConverter.SQLSyntaxConverter;

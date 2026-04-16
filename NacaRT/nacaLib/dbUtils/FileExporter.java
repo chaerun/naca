@@ -16,7 +16,6 @@
 package nacaLib.dbUtils;
 
 import jlib.log.Log;
-import jlib.misc.BaseDataFile;
 import jlib.misc.DataFileLineReader;
 import jlib.misc.LineRead;
 import jlib.misc.LogicalFileDescriptor;

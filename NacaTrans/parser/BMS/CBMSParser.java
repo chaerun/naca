@@ -18,17 +18,18 @@
  */
 package parser.BMS;
 
-
 import java.util.Hashtable;
-
-import org.apache.log4j.Logger;
-
+import lexer.CBaseToken;
+import lexer.CTokenList;
+import lexer.CTokenType;
+import lexer.BMS.CBMSKeywordList;
 import parser.CGlobalCommentContainer;
 import parser.CParser;
-import parser.map_elements.*;
+import parser.map_elements.CFieldElement;
+import parser.map_elements.CFieldGroup;
+import parser.map_elements.CMapElement;
+import parser.map_elements.CMapSetElement;
 import utils.Transcoder;
-import lexer.*;
-import lexer.BMS.CBMSKeywordList;
 
 /**
  * @author sly

@@ -15,12 +15,9 @@
  */
 package nacaLib.varEx;
 
-import java.util.ArrayList;
-
 import jlib.misc.ArrayDyn;
 import jlib.misc.ArrayFix;
 import jlib.misc.ArrayFixDyn;
-
 import nacaLib.basePrgEnv.BaseProgramManager;
 
 /**

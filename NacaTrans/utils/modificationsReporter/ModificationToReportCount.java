@@ -12,11 +12,8 @@
  */
 package utils.modificationsReporter;
 
-import java.util.Collection;
 import java.util.Enumeration;
 import java.util.Hashtable;
-import java.util.Iterator;
-
 import jlib.xml.Tag;
 
 public class ModificationToReportCount

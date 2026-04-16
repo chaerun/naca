@@ -7,14 +7,9 @@
 package nacaLib.sqlSupport;
 
 import java.util.ArrayList;
-
 import jlib.misc.ArrayFixDyn;
-import jlib.misc.StringUtil;
-import jlib.sql.BaseDbColDefinition;
-import jlib.sql.BaseDbColDefinitionFactory;
 import jlib.sql.DbConnectionBase;
 import jlib.sql.OracleColumnDefinition;
-import jlib.sql.SQLColumnType;
 
 public abstract class PreparedStmtColumnTypeManager
 {

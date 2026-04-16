@@ -21,14 +21,11 @@ package parser.Cobol.elements;
 import lexer.CBaseToken;
 import lexer.CTokenType;
 import lexer.Cobol.CCobolKeywordList;
-
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-
 import parser.Cobol.CCobolElement;
-import semantic.CBaseLanguageEntity;
 import semantic.CBaseEntityFactory;
-import semantic.Verbs.CEntityInspectConverting;
+import semantic.CBaseLanguageEntity;
 import semantic.Verbs.CEntityNextSentence;
 import utils.CGlobalEntityCounter;
 import utils.Transcoder;

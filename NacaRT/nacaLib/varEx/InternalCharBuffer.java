@@ -20,7 +20,6 @@ package nacaLib.varEx;
 
 import jlib.misc.AsciiEbcdicConverter;
 import nacaLib.base.CJMapObject;
-import nacaLib.base.JmxGeneralStat;
 import nacaLib.debug.BufferSpy;
 import nacaLib.tempCache.CStr;
 import nacaLib.tempCache.TempCacheLocator;

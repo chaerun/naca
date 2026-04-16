@@ -18,12 +18,10 @@
  */
 package parser.expression;
 
-import org.w3c.dom.*;
-
-import org.apache.xpath.Expression;
-
-import semantic.CDataEntity;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
 import semantic.CBaseEntityFactory;
+import semantic.CDataEntity;
 import semantic.expression.CBaseEntityCondition;
 import semantic.expression.CBaseEntityExpression;
 import utils.NacaTransAssertException;

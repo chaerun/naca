@@ -25,10 +25,7 @@
 
 package nacaLib.varEx;
 
-import java.nio.Buffer;
-
 import jlib.misc.IntegerRef;
-import jlib.misc.LineRead;
 import nacaLib.debug.BufferSpy;
 import nacaLib.tempCache.CStr;
 import nacaLib.tempCache.TempCacheLocator;

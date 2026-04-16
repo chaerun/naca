@@ -19,25 +19,19 @@
 package parser.Cobol.elements;
 
 import java.util.Vector;
-
 import jlib.xml.Tag;
-
 import lexer.CBaseToken;
-import lexer.CTokenConstant;
-import lexer.CTokenList;
 import lexer.CTokenType;
 import lexer.Cobol.CCobolConstantList;
 import lexer.Cobol.CCobolKeywordList;
-
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-
 import parser.CIdentifier;
 import parser.Cobol.CCobolElement;
 import parser.expression.CTerminal;
-import semantic.CDataEntity;
 import semantic.CBaseEntityFactory;
 import semantic.CBaseLanguageEntity;
+import semantic.CDataEntity;
 import semantic.Verbs.CEntityCount;
 import semantic.Verbs.CEntityInspectConverting;
 import semantic.Verbs.CEntityReplace;

@@ -19,7 +19,6 @@
 package generate.java;
 
 import generate.CBaseLanguageExporter;
-import semantic.CEntityDataSection;
 import semantic.CEntityIOSection;
 import utils.CObjectCatalog;
 

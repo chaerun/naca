@@ -14,7 +14,6 @@ package nacaLib.stringSupport;
 
 import nacaLib.program.CallbackSearch;
 import nacaLib.program.CompareResult;
-import nacaLib.program.Paragraph;
 import nacaLib.varEx.Var;
 
 public class SearchAllHandler

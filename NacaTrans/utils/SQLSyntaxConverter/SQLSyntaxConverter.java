@@ -12,24 +12,13 @@
  */
 package utils.SQLSyntaxConverter;
 
-import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.Hashtable;
-import java.util.LinkedList;
-import java.util.ListIterator;
-import java.util.zip.ZipEntry;
-
-import generate.SQLDumper;
-import jlib.log.Log;
-import jlib.misc.FileSystem;
 import jlib.misc.StringUtil;
 import jlib.xml.Tag;
 import jlib.xml.TagCursor;
-import lexer.CBaseToken;
 import lexer.CTokenList;
-import lexer.CTokenType;
 import utils.Transcoder;
-import utils.TranscoderEngine;
 import utils.DCLGenConverter.DCLGenConverterTarget;
 
 public class SQLSyntaxConverter

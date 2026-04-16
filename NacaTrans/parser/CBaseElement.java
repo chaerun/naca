@@ -18,16 +18,18 @@
  */
 package parser;
 
-import java.util.*;
-
-import org.apache.log4j.Logger;
-import org.w3c.dom.*;
-
+import java.util.LinkedList;
+import java.util.ListIterator;
+import java.util.NoSuchElementException;
+import lexer.CBaseToken;
+import lexer.COverridenKeywordManager;
+import lexer.CTokenList;
+import lexer.CTokenType;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
 import semantic.CBaseEntityFactory;
 import semantic.CBaseLanguageEntity;
 import utils.Transcoder;
-
-import lexer.*;
 
 /**
  * @author sly

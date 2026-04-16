@@ -16,7 +16,6 @@
 package generate.java.expressions;
 
 import generate.CBaseLanguageExporter;
-import semantic.expression.CEntityCurrentDateSQLFunction;
 import semantic.expression.CEntityNamedSQLFunction;
 import utils.CObjectCatalog;
 import utils.Transcoder;

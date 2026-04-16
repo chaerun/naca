@@ -15,17 +15,15 @@
  */
 package nacaLib.bdb;
 
+import com.sleepycat.je.Environment;
 import jlib.log.Log;
 import jlib.misc.AsciiEbcdicConverter;
 import jlib.misc.DataFileLineReader;
 import jlib.misc.DataFileWrite;
 import jlib.misc.FileSystem;
 import jlib.misc.LineRead;
-import nacaLib.basePrgEnv.BaseResourceManager;
 import nacaLib.tempCache.TempCacheLocator;
 import nacaLib.varEx.FileDescriptor;
-
-import com.sleepycat.je.Environment;
 
 /**
  *

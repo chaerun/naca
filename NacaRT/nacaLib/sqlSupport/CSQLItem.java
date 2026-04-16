@@ -18,12 +18,10 @@
  */
 package nacaLib.sqlSupport;
 
-//import oracle.sql.ROWID;
-import jlib.sql.SQLColumnType;
-import oracle.sql.ROWID;
 import nacaLib.varEx.VarAndEdit;
 import nacaLib.varEx.VarBase;
 import nacaLib.varEx.VarEnumerator;
+import oracle.sql.ROWID;
 
 /**
  * @author sly

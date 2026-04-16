@@ -19,9 +19,8 @@
 package nacaLib.stringSupport;
 
 import java.util.ArrayList;
-
-import jlib.misc.StringUtil;
-import nacaLib.varEx.*;
+import nacaLib.varEx.Var;
+import nacaLib.varEx.VarAndEdit;
 
 class UnstringDelimiter
 {

@@ -18,13 +18,11 @@ package nacaLib.dbUtils;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-
 import jlib.log.Log;
 import jlib.misc.AsciiEbcdicConverter;
 import jlib.misc.BaseDataFile;
 import jlib.misc.DBIOAccounting;
 import jlib.misc.DBIOAccountingType;
-import jlib.misc.JVMReturnCodeManager;
 import jlib.misc.StringUtil;
 import jlib.sql.BaseDbColDefinition;
 import jlib.sql.BaseDbColDefinitionFactory;

@@ -15,7 +15,6 @@ package nacaLib.stringSupport;
 import jlib.log.Log;
 import nacaLib.tempCache.CStr;
 import nacaLib.varEx.Var;
-import nacaLib.varEx.VarAndEdit;
 
 public class InspectConverting
 {

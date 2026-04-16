@@ -8,10 +8,7 @@ package nacaLib.program;
 
 import java.util.Enumeration;
 import java.util.Hashtable;
-
 import jlib.log.Log;
-import jlib.sql.DbPreparedStatement;
-
 import nacaLib.basePrgEnv.BaseProgram;
 
 public class StatCoverage

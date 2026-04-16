@@ -13,12 +13,10 @@
 package nacaLib.program;
 
 import java.util.ArrayList;
-
-import nacaLib.base.*;
+import nacaLib.base.CJMapObject;
 import nacaLib.basePrgEnv.BaseEnvironment;
 import nacaLib.basePrgEnv.BaseProgramLoader;
 import nacaLib.basePrgEnv.BaseProgramManager;
-import nacaLib.basePrgEnv.BaseResourceManager;
 import nacaLib.varEx.CCallParam;
 import nacaLib.varEx.CallParamByLength;
 import nacaLib.varEx.CallParamByRef;

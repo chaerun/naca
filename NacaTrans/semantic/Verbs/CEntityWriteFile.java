@@ -13,7 +13,6 @@
 package semantic.Verbs;
 
 import generate.CBaseLanguageExporter;
-import parser.expression.CTerminal;
 import semantic.CBaseActionEntity;
 import semantic.CDataEntity;
 import semantic.CEntityFileDescriptor;

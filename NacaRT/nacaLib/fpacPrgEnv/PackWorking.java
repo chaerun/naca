@@ -12,10 +12,7 @@
  */
 package nacaLib.fpacPrgEnv;
 
-
-import jlib.misc.AsciiEbcdicConverter;
 import nacaLib.misc.CCommarea;
-import nacaLib.varEx.CCallParam;
 import nacaLib.varEx.CallParamFpac;
 import nacaLib.varEx.CobolConstant;
 import nacaLib.varEx.Var;

@@ -7,9 +7,6 @@
 package nacaLib.pathManager;
 
 import java.util.ArrayList;
-import java.util.Hashtable;
-
-import jlib.misc.FileSystem;
 import jlib.misc.StringUtil;
 import jlib.xml.Tag;
 import jlib.xml.TagCursor;

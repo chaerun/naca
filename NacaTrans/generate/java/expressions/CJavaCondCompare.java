@@ -19,7 +19,6 @@
 package generate.java.expressions;
 
 import semantic.expression.CBaseEntityCondition;
-import semantic.expression.CBaseEntityExpression;
 import semantic.expression.CEntityCondCompare;
 
 /**

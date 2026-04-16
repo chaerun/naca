@@ -1,6 +1,7 @@
-import nacaLib.program.* ;
-import nacaLib.varEx.* ;
 import nacaLib.callPrg.CalledProgram;
+import nacaLib.varEx.DataSection;
+import nacaLib.varEx.ParamDeclaration;
+
 public class CALLMSG extends CalledProgram                                      // (1)  IDENTIFICATION DIVISION.
 {
 	// =================================================================        // (2)

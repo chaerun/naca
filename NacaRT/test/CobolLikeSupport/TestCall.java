@@ -11,12 +11,11 @@
  * Licensed under GPL (GPL-LICENSE.txt) license.
  */
 
-import java.io.InputStream;
-
-import idea.onlinePrgEnv.OnlineProgram;
-import nacaLib.varEx.*;
 import nacaLib.batchPrgEnv.BatchProgram;
-import nacaLib.program.*;
+import nacaLib.program.Paragraph;
+import nacaLib.varEx.Edit;
+import nacaLib.varEx.MapRedefine;
+import nacaLib.varEx.Var;
 
 /**
  * @author U930DI

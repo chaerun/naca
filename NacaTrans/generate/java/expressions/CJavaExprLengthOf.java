@@ -18,8 +18,6 @@ package generate.java.expressions;
 import generate.CBaseLanguageExporter;
 import semantic.CDataEntity;
 import semantic.expression.CEntityExprLengthOf;
-import semantic.expression.CEntityLengthOf;
-import semantic.expression.CBaseEntityExpression.CEntityExpressionType;
 import utils.CObjectCatalog;
 
 /**

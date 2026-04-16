@@ -12,9 +12,7 @@
  */
 package generate.java.verbs;
 
-import parser.expression.CTerminal;
 import generate.CBaseLanguageExporter;
-import semantic.CDataEntity;
 import semantic.Verbs.CEntityWriteFile;
 import utils.CObjectCatalog;
 

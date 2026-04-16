@@ -17,26 +17,19 @@
  * Window&gt;Preferences&gt;Java&gt;Code Generation&gt;Code and Comments
  */
 package parser.Cobol.elements.SQL;
-import lexer.*;
-import lexer.Cobol.CCobolKeywordList;
 
 import java.util.ArrayList;
-import java.util.ListIterator;
-
+import java.util.Hashtable;
 import jlib.xml.Tag;
-
-//import org.apache.xml.utils.StringVector;
+import lexer.CBaseToken;
+import lexer.CTokenType;
+import lexer.Cobol.CCobolKeywordList;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-
-import java.util.Hashtable;
-
 import semantic.CBaseEntityFactory;
 import semantic.CBaseLanguageEntity;
-
 import semantic.SQL.CEntitySQLDeclareTable;
 import utils.CRulesManager;
-import utils.Transcoder;
 
 /**
  * @author U930DI

@@ -15,7 +15,6 @@
  */
 package utils;
 
-import java.util.Collection;
 import java.util.Enumeration;
 import java.util.Hashtable;
 

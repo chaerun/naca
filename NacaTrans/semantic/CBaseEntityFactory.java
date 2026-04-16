@@ -19,15 +19,11 @@
 package semantic;
 
 import generate.CBaseLanguageExporter;
-import generate.java.CJavaFileSelect;
-
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Vector;
-
 import parser.CIdentifier;
 import parser.Cobol.elements.SQL.CSQLTableColDescriptor;
-import parser.Cobol.elements.SQL.SQLSetDateTimeType;
 import semantic.CICS.CEntityCICSAbend;
 import semantic.CICS.CEntityCICSAddress;
 import semantic.CICS.CEntityCICSAskTime;
@@ -101,7 +97,6 @@ import semantic.Verbs.CEntityGoto;
 import semantic.Verbs.CEntityInc;
 import semantic.Verbs.CEntityInitialize;
 import semantic.Verbs.CEntityInspectConverting;
-import semantic.Verbs.CEntityLabelNextSentence;
 import semantic.Verbs.CEntityLoopIter;
 import semantic.Verbs.CEntityLoopWhile;
 import semantic.Verbs.CEntityMultiply;
@@ -138,8 +133,8 @@ import semantic.expression.CEntityCondNot;
 import semantic.expression.CEntityCondOr;
 import semantic.expression.CEntityConstant;
 import semantic.expression.CEntityCurrentDate;
-import semantic.expression.CEntityCurrentTimeStampSQLFunction;
 import semantic.expression.CEntityCurrentDateSQLFunction;
+import semantic.expression.CEntityCurrentTimeStampSQLFunction;
 import semantic.expression.CEntityDigits;
 import semantic.expression.CEntityExprLengthOf;
 import semantic.expression.CEntityExprOpposite;
@@ -192,8 +187,6 @@ import semantic.forms.CEntitySetHighligh;
 import semantic.forms.CEntitySkipFields;
 import semantic.forms.CResourceStrings;
 import utils.CObjectCatalog;
-
-
 
 /**
  * @author sly

@@ -13,9 +13,6 @@
 package nacaLib.sqlSupport;
 
 import java.sql.Connection;
-
-import nacaLib.basePrgEnv.BaseResourceManager;
-
 import jlib.sql.DbConnectionBase;
 import jlib.sql.DbConnectionManagerBase;
 import jlib.sql.DbDriverId;

@@ -11,7 +11,6 @@
  * Licensed under GPL (GPL-LICENSE.txt) license.
  */
 import idea.onlinePrgEnv.OnlineProgram;
-import nacaLib.batchPrgEnv.BatchProgram;
 import nacaLib.program.Paragraph;
 import nacaLib.varEx.DataSection;
 import nacaLib.varEx.Var;

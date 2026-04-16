@@ -12,18 +12,13 @@
  */
 package idea.onlinePrgEnv;
 
-import jlib.classLoader.CodeManager;
 import jlib.sql.DbConnectionManagerBase;
 import jlib.xml.Tag;
-import nacaLib.basePrgEnv.BaseEnvironment;
 import nacaLib.basePrgEnv.BaseProgramLoader;
 import nacaLib.basePrgEnv.BaseSession;
 import nacaLib.basePrgEnv.CBaseMapFieldLoader;
-import nacaLib.classLoad.CustomClassDynLoaderFactory;
 import nacaLib.misc.CLocalizedTextManager;
 import nacaLib.pathManager.PathsManager;
-
-import org.w3c.dom.Document;
 
 public class OnlineProgramLoader extends BaseProgramLoader
 {

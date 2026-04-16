@@ -9,8 +9,6 @@ import nacaLib.program.Paragraph;
 import nacaLib.program.Section;
 import nacaLib.program.Sentence;
 import nacaLib.varEx.DataSection;
-import nacaLib.varEx.Var;
-
 
 public class TestNextSentence extends OnlineProgram
 {

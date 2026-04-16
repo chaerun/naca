@@ -11,8 +11,9 @@
  * Licensed under GPL (GPL-LICENSE.txt) license.
  */
 import idea.onlinePrgEnv.OnlineProgram;
-import jlib.log.Log;
-import nacaLib.varEx.*;
+import nacaLib.varEx.DataSection;
+import nacaLib.varEx.ParamDeclaration;
+import nacaLib.varEx.Var;
 
 public class TestCicsLinkedProgram3 extends OnlineProgram
 {

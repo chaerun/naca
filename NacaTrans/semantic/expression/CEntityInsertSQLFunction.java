@@ -15,11 +15,10 @@
  */
 package semantic.expression;
 
-import parser.CIdentifier;
 import generate.CBaseLanguageExporter;
+import parser.CIdentifier;
 import semantic.CBaseEntityFactory;
 import semantic.CDataEntity;
-import semantic.CDataEntity.CDataEntityType;
 import utils.CObjectCatalog;
 
 /**

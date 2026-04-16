@@ -20,13 +20,10 @@ package parser.expression;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-
-
-import semantic.CDataEntity;
 import semantic.CBaseEntityFactory;
+import semantic.CDataEntity;
 import semantic.expression.CBaseEntityCondition;
 import semantic.expression.CBaseEntityExpression;
-import utils.Transcoder;
 
 
 /**

@@ -28,7 +28,6 @@ package nacaLib.varEx;
 import jlib.log.Log;
 import nacaLib.basePrgEnv.BaseProgram;
 import nacaLib.basePrgEnv.BaseProgramManager;
-import nacaLib.program.Section;
 import nacaLib.program.SpecialName;
 import nacaLib.programStructure.DataSectionFile;
 import nacaLib.programStructure.Division;

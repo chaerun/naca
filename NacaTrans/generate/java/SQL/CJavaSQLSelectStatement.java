@@ -18,14 +18,12 @@
  */
 package generate.java.SQL;
 
-import java.util.Vector;
-
 import generate.CBaseLanguageExporter;
 import generate.SQLDumper;
+import java.util.Vector;
 import semantic.CDataEntity;
 import semantic.SQL.CEntitySQLSelectStatement;
 import utils.CObjectCatalog;
-import utils.Transcoder;
 
 /**
  * @author U930DI
