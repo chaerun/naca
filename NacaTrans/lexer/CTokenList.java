@@ -24,7 +24,6 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.ListIterator;
 import java.util.NoSuchElementException;
-
 import utils.Transcoder;
 
 /**
@@ -250,23 +249,24 @@ public class CTokenList
 		{
 			if (lst != null && lst.GetNbTokens()>0)
 			{
-				FileOutputStream file = new FileOutputStream(filename) ;
-				PrintStream output = new PrintStream(file, true) ;
-				lst.StartIter() ;
-				CBaseToken tok = lst.GetCurrentToken() ;
-				int nCurLine = tok.getLine() ;
-				output.print("" + nCurLine + ":") ;
-				while (tok != null)
-				{
-					//if (tokEntry.getLine() > nCurLine)
-					if (tok.m_bIsNewLine)
+				try (FileOutputStream file = new FileOutputStream(filename);
+						PrintStream output = new PrintStream(file, true)) {
+					lst.StartIter() ;
+					CBaseToken tok = lst.GetCurrentToken() ;
+					int nCurLine = tok.getLine() ;
+					output.print("" + nCurLine + ":") ;
+					while (tok != null)
 					{
-						output.println("") ;
-						nCurLine = tok.getLine() ;
-						output.print("" + nCurLine + ":") ;
+						//if (tokEntry.getLine() > nCurLine)
+						if (tok.m_bIsNewLine)
+						{
+							output.println("") ;
+							nCurLine = tok.getLine() ;
+							output.print("" + nCurLine + ":") ;
+						}
+						output.print(tok.toString());
+						tok = lst.GetNext() ;
 					}
-					output.print(tok.toString());
-					tok = lst.GetNext() ;
 				}
 			}
 			else

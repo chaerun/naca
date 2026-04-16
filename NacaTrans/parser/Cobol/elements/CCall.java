@@ -19,21 +19,19 @@
 package parser.Cobol.elements;
 
 import java.util.Vector;
-
-import lexer.*;
+import lexer.CBaseToken;
+import lexer.CTokenType;
 import lexer.Cobol.CCobolKeywordList;
-
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-
 import parser.CIdentifier;
 import parser.Cobol.CCobolElement;
 import parser.expression.CIdentifierTerminal;
 import parser.expression.CTerminal;
 import semantic.CBaseActionEntity;
-import semantic.CDataEntity;
-import semantic.CBaseLanguageEntity;
 import semantic.CBaseEntityFactory;
+import semantic.CBaseLanguageEntity;
+import semantic.CDataEntity;
 import semantic.Verbs.CEntityCallProgram;
 import semantic.Verbs.CEntityRoutineEmulation;
 import semantic.Verbs.CEntityRoutineEmulationCall;
@@ -298,15 +296,6 @@ public class CCall extends CCobolElement
 			CCallParameter p = m_arrParams.elementAt(i) ;
 			Element ePar = root.createElement(p.method);
 			e.appendChild(ePar) ;
-			if(p == null)
-			{
-				int gg = 0;
-			}
-			if(p.term == null)
-			{
-				int gg = 0;
-			}
-				
 			p.term.ExportTo(ePar, root) ;
 		}
 		return e;

@@ -374,13 +374,7 @@ public class BatchMain
 			{
 				Log.logCritical("No FILEIN and FILEOUT specification");
 				JVMReturnCodeManager.setExitCode(8);
-			}
-			else if(csParameter == null)
-			{
-				Log.logCritical("No encoding converter parameter found");
-				JVMReturnCodeManager.setExitCode(8);
-			}
-			else if(csParameterUpperCase.indexOf("COPYCLASS=") != -1)
+			} else if(csParameterUpperCase.indexOf("COPYCLASS=") != -1)
 			{
 				int nPos = csParameterUpperCase.indexOf("COPYCLASS=") + 10;
 				String csCopyClass = csParameter.substring(nPos);

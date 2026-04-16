@@ -238,9 +238,6 @@ public class ZipHelper {
 		int nFiles,nnFiles;            // To parse the list of files.
 		String fileName;               // Absolute path to one of the files in the list.
 		File file;                     // One of the files in the list.
-
-		FileOutputStream fos;          // A stream to create the ZIP archive. 
-		ZipOutputStream zos;           // The Zip deflater. 
 		ZipEntry ze;                   // Each file in the list is one zip entry.
 
 		FileInputStream fis;           // To read the content of one file in the list.
@@ -248,27 +245,22 @@ public class ZipHelper {
 		byte buffer[]=new byte[1000];  // A buffer between the content of the file and the zip archive.
 		int bufferSize=buffer.length;  // The size of the buffer.
 		int bytesRead;                 // The number of bytes read from the file.
-
-		try {
-//****************************** Initialization *****************************
-
+		
 //................. Checks the destination zip archive ......................
-			if (destinationZipArchive.exists()) {
-				if (destinationZipArchive.isDirectory())
-					throw new Exception("The specified zip archive '"+destinationZipArchive+"' already exists, and it is a folder.");
-				else
-					destinationZipArchive.delete();
-			} else {
-				File destinationFolder=destinationZipArchive.getParentFile();
-				if (!destinationFolder.exists())
-					if (!destinationFolder.mkdirs())
-						throw new Exception("Could not create the folder for '"+destinationZipArchive.getAbsolutePath()+"'.");
-			}
+		if (destinationZipArchive.exists()) {
+			if (destinationZipArchive.isDirectory())
+				throw new Exception("The specified zip archive '"+destinationZipArchive+"' already exists, and it is a folder.");
+			else
+				destinationZipArchive.delete();
+		} else {
+			File destinationFolder=destinationZipArchive.getParentFile();
+			if (!destinationFolder.exists())
+				if (!destinationFolder.mkdirs())
+					throw new Exception("Could not create the folder for '"+destinationZipArchive.getAbsolutePath()+"'.");
+		}
 
-//.................... Initializes a ZIP stream .............................
-			fos=new FileOutputStream(destinationZipArchive);
-			zos=new ZipOutputStream(fos);
-				
+		try (FileOutputStream fos = new FileOutputStream(destinationZipArchive);
+				ZipOutputStream zos = new ZipOutputStream(fos)) {
 //**************** Puts every file in the list in the zip archive ***********
 			nnFiles=files.size();
 			for(nFiles=0;nFiles<nnFiles;nFiles++) {

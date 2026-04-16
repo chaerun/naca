@@ -325,7 +325,6 @@ public class Transcoder
 		return "" ;
 	}
 
-	@SuppressWarnings("unchecked")
 	public void DoAllApplications()
 	{
 		for (BaseEngine engine : m_tabEngines.values())
@@ -510,7 +509,6 @@ public class Transcoder
 		logInfo("Done; Errors="+ms_nNbError + " Warnings="+ms_nNbWarning);		
 	}
 
-	@SuppressWarnings("unchecked")
 	protected void DoApplications(String groupToTranscode)
 	{
 		if (groupToTranscode != null && !groupToTranscode.equals(""))

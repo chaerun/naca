@@ -24,7 +24,6 @@ import java.util.Hashtable;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
 import java.util.zip.ZipInputStream;
-
 import jlib.log.Log;
 
 public class ClassDynLoader extends ClassLoader
@@ -312,12 +311,10 @@ public class ClassDynLoader extends ClassLoader
 	private Hashtable<String, byte[]> loadJarFileData(String csJarFile, Hashtable<String, Integer> hashFileSize)
 	{		
 		Hashtable<String, byte[]> hashFileData = new Hashtable<String, byte[]>();  
-		try
-		{
-		    FileInputStream fis = new FileInputStream(csJarFile);
-		    BufferedInputStream bis = new BufferedInputStream(fis);
-		    ZipInputStream zis = new ZipInputStream(bis);
-		    
+		
+		try (FileInputStream fis = new FileInputStream(csJarFile);
+				BufferedInputStream bis = new BufferedInputStream(fis);
+				ZipInputStream zis = new ZipInputStream(bis)) {
 		    ZipEntry entry = null;
 		    while((entry = zis.getNextEntry()) != null)
 			{

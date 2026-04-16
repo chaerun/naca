@@ -1434,7 +1434,7 @@ public class CWorkingEntry extends CCobolElement
 			int n = Integer.parseInt(m_Occurs.GetValue());
 			if (n < 2)
 			{
-				Transcoder.logError(le.getLine(), "Unexpecting situation while analysing MAP REDEFINE");
+				Transcoder.logError(-1, "Unexpecting situation while analysing MAP REDEFINE");
 				return 0 ;
 			}
 			else

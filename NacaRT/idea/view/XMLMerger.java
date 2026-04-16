@@ -13,22 +13,16 @@
 package idea.view;
 
 import idea.onlinePrgEnv.OnlineSession;
-
 import java.util.Hashtable;
-
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
-
-import jlib.misc.FileSystem;
 import jlib.misc.NumberParser;
 import jlib.misc.StringUtil;
 import jlib.xml.XMLUtil;
-
 import nacaLib.basePrgEnv.BaseProgramLoader;
 import nacaLib.basePrgEnv.BaseResourceManager;
 import nacaLib.basePrgEnv.SessionEnvironmentRequester;
-
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -115,22 +109,13 @@ public class XMLMerger
 		if(m_csXMLMergerDebugOutputPath != null)
 		{
 			String csOut = m_csXMLMergerDebugOutputPath+"xmlData.xml";
-			if(xmlData != null)
-				XMLUtil.ExportXML(xmlData, csOut);
-			else
-				FileSystem.delete(csOut);
+			XMLUtil.ExportXML(xmlData, csOut);
 			
 			csOut = m_csXMLMergerDebugOutputPath+"xmlStruct.xml";
-			if(xmlStruct != null)
-				XMLUtil.ExportXML(xmlStruct, csOut);
-			else
-				FileSystem.delete(csOut);
+			XMLUtil.ExportXML(xmlStruct, csOut);
 						
 			csOut = m_csXMLMergerDebugOutputPath+"xmlMergerOutput.xml";
-			if(xmlOutput != null)
-				XMLUtil.ExportXML(xmlOutput, csOut);
-			else
-				FileSystem.delete(csOut);
+			XMLUtil.ExportXML(xmlOutput, csOut);
 		}
 		return xmlOutput ;
 	}
