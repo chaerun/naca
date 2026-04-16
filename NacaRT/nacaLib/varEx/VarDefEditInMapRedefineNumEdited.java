@@ -19,15 +19,12 @@
 package nacaLib.varEx;
 
 import java.math.BigDecimal;
-
-
 import nacaLib.bdb.BtreeSegmentKeyTypeFactory;
 import nacaLib.mathSupport.MathAdd;
 import nacaLib.misc.NumberParserDec;
 import nacaLib.misc.StringAsciiEbcdicUtil;
 import nacaLib.sqlSupport.CSQLItemType;
 import nacaLib.tempCache.CStr;
-
 
 /**
  * @author U930DI
@@ -451,13 +448,6 @@ public class VarDefEditInMapRedefineNumEdited extends VarDefEditInMapRedefineBas
 		int nBodyPosStart = getBodyAbsolutePosition(buffer);
 		int nBodyLength = getBodyLength();
 		return internalWriteRightPadding(buffer, nBodyPosStart, nBodyLength, cs, cPad);
-	}
-	
-	private int writeEditRightPadding(VarBufferPos buffer, int nOffset, String cs, char cPad)
-	{
-		int nBodyPosStart = getBodyAbsolutePosition(buffer);
-		int nBodyLength = getBodyLength();
-		return internalWriteRightPadding(buffer, nBodyPosStart+nOffset, nBodyLength, cs, cPad);
 	}
 	
 	protected int writeEditRepeatingchar(VarBufferPos buffer, char c)

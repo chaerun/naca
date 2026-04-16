@@ -18,10 +18,7 @@
  */
 package nacaLib.varEx;
 
-
 import java.math.BigDecimal;
-
-
 import nacaLib.bdb.BtreeSegmentKeyTypeFactory;
 import nacaLib.debug.BufferSpy;
 import nacaLib.mathSupport.MathAdd;
@@ -526,13 +523,6 @@ public class VarDefEditInMap extends VarDefEdit
 		int nBodyPosStart = getBodyAbsolutePosition(buffer);
 		int nBodyLength = getBodyLength();
 		return internalWriteRightPadding(buffer, nBodyPosStart, nBodyLength, cs, cPad);
-	}
-	
-	private int writeEditRightPadding(VarBufferPos buffer, int nOffset, String cs, char cPad)
-	{
-		int nBodyPosStart = getBodyAbsolutePosition(buffer);
-		int nBodyLength = getBodyLength();
-		return internalWriteRightPadding(buffer, nBodyPosStart+nOffset, nBodyLength, cs, cPad);
 	}
 	
 //	private int writeEditRightPadding(VarBufferPos buffer, int nOffset, String cs, char cPad, InitializeCache initializeCache)

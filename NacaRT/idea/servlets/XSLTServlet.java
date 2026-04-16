@@ -16,9 +16,7 @@ import idea.onlinePrgEnv.OnlineResourceManager;
 import idea.onlinePrgEnv.OnlineResourceManagerFactory;
 import idea.onlinePrgEnv.OnlineSession;
 import idea.view.View;
-
 import java.io.IOException;
-
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.ServletOutputStream;
@@ -26,9 +24,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-
 import jlib.xml.XSLTransformer;
-
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
@@ -186,10 +182,6 @@ public class XSLTServlet extends HttpServlet
 		doRenderOutput(xmlOutput, res, xformer) ;
 	}
 	
-	private void renderOutput(Document xmlOutput, HttpServletResponse res)
-	{
-		renderOutput(xmlOutput, res, false, false);
-	}
 	private void renderOutput(Document xmlOutput, HttpServletResponse res, boolean bZoom, boolean bBold)
 	{
 		OnlineResourceManager resource = OnlineResourceManagerFactory.GetInstance();

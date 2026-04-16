@@ -18,16 +18,12 @@
  */
 package parser.Cobol.elements.SQL;
 import java.util.Vector;
-
 import jlib.misc.StringUtil;
-
 import lexer.CBaseToken;
 import lexer.CTokenType;
 import lexer.Cobol.CCobolKeywordList;
-
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-
 import parser.CIdentifier;
 import semantic.CBaseEntityFactory;
 import semantic.CBaseLanguageEntity;
@@ -308,26 +304,6 @@ public class CExecSQLUpdate extends CBaseExecSQLAction
 		}
 	}
 	
-	private void handleRightExpression(String csRightExpression)
-	{
-		if(!StringUtil.isEmpty(csRightExpression))
-		{
-			SQLSyntaxConverter sqlSyntaxConverter = Transcoder.getSQLSyntaxConverter();
-			if(sqlSyntaxConverter != null)
-			{
-				String csRightExpressionTrimmed = csRightExpression.trim();
-				String cs = sqlSyntaxConverter.resolve(csRightExpressionTrimmed);
-				AppendRequiredSpace();
-				m_Clause += cs;
-			}
-			else
-			{
-				AppendRequiredSpace();
-				m_Clause += csRightExpression;
-			}
-		}
-	}
-	
 	private void handleRightExpressionNoSpace(String csRightExpression)
 	{
 		if(!StringUtil.isEmpty(csRightExpression))
@@ -364,54 +340,6 @@ public class CExecSQLUpdate extends CBaseExecSQLAction
 		//ExportParameters(root, e);
 		
 		return e;
-	}
-	
-	private void ExportParameters(Document root, Element parent)
-	{
-		try
-		{
-			Element e = root.createElement("Parameters") ;
-			parent.appendChild(e);
-
-			int nNbItems = m_arrParameters.size();
-			for(int n=0; n<nNbItems; n++)
-			{
-				Element eParam = root.createElement("Parameter") ;
-				e.appendChild(eParam);
-				
-				CIdentifier s = m_arrParameters.elementAt(n);
-				s.ExportTo(eParam, root) ;
-			}
-		}
-		catch (ArrayIndexOutOfBoundsException e)
-		{
-			e.printStackTrace();
-			//System.out.println(e.toString());
-		}
-	}
-
-	private void ExportSet(Document root, Element parent)
-	{
-		try
-		{
-			Element e = root.createElement("Set") ;
-			parent.appendChild(e);
-
-			int nNbItems = m_arrSets.size();
-			for(int n=0; n<nNbItems; n++)
-			{
-				Element eParam = root.createElement("Parameter") ;
-				e.appendChild(eParam);
-				
-				CIdentifier s = m_arrSets.elementAt(n);
-				s.ExportTo(eParam, root) ;
-			}
-		}
-		catch (ArrayIndexOutOfBoundsException e)
-		{
-			e.printStackTrace();
-			//System.out.println(e.toString());
-		}
 	}
 
 	protected CBaseLanguageEntity DoCustomSemanticAnalysis(CBaseLanguageEntity parent, CBaseEntityFactory factory)

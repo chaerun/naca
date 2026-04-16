@@ -19,20 +19,40 @@ package utils;
 
 import java.util.Collection;
 import java.util.Vector;
-
 import jlib.xml.Tag;
 import jlib.xml.TagCursor;
-
 import lexer.CTokenList;
 import lexer.Cobol.CCobolLexer;
-
 import parser.CIdentifier;
 import parser.Cobol.CCobolElement;
-import semantic.*;
-import semantic.CICS.*;
-import semantic.Verbs.*;
-import semantic.expression.*;
-import semantic.forms.*;
+import semantic.CBaseActionEntity;
+import semantic.CBaseEntityFactory;
+import semantic.CBaseExternalEntity;
+import semantic.CBaseLanguageEntity;
+import semantic.CDataEntity;
+import semantic.CEntityAttribute;
+import semantic.CEntityBloc;
+import semantic.CEntityCondition;
+import semantic.CEntityDataSection;
+import semantic.CEntityFileDescriptor;
+import semantic.CEntityFileDescriptorLengthDependency;
+import semantic.CEntityInline;
+import semantic.CEntityProcedure;
+import semantic.CEntityProcedureDivision;
+import semantic.CEntityStructure;
+import semantic.CGenericDataEntityReference;
+import semantic.CICS.CEntityCICSLink;
+import semantic.Verbs.CEntityCallFunction;
+import semantic.Verbs.CEntityCallProgram;
+import semantic.Verbs.CEntityRoutineEmulationCall;
+import semantic.expression.CBaseEntityCondExpr;
+import semantic.expression.CBaseEntityCondition;
+import semantic.expression.CBaseEntityExpression;
+import semantic.expression.CEntityCondEquals;
+import semantic.expression.CEntityList;
+import semantic.expression.CEntityString;
+import semantic.forms.CEntityResourceField;
+import semantic.forms.CEntityResourceForm;
 import utils.CobolTranscoder.ProcedureCallTree;
 import utils.CobolTranscoder.Notifs.NotifIsUsedCICSPreprocessor;
 
@@ -1104,38 +1124,6 @@ public class CSpecialActionContainer
 			linkage.GetParent().AddChild(depSection, linkage) ;
 		}
 		
-	}
-	/**
-	 * @param desc
-	 * @param factory 
-	 * @param depSection 
-	 * @return
-	 */
-	
-	
-	private void checkBinaryFieldsInChildren(CBaseLanguageEntity desc)
-	{
-		for (CBaseLanguageEntity le : desc.GetListOfChildren())
-		{
-			if  (le.GetInternalLevel()>0 && CEntityStructure.class.isInstance(le))
-			{
-				CEntityStructure struct = (CEntityStructure) le ;
-				if (struct.getComp() != null && (struct.getComp().equalsIgnoreCase("COMP4") || struct.getComp().equalsIgnoreCase("COMP")))
-				{
-					Transcoder.logWarn(struct.getLine(), "COMP4 in fixed length file structure : "+struct.ExportReference(0)) ;
-				}
-				if (struct.HasChildren())
-				{
-					checkBinaryFieldsInChildren(le) ;
-				}
-			}
-			else if (CEntityInline.class.isInstance(le))
-			{
-				CEntityInline inline = (CEntityInline)le ;
-				CBaseExternalEntity ext = inline.getExternalEntity() ;
-				checkBinaryFieldsInChildren(ext) ;
-			}
-		}
 	}
 	
 	private CDataEntity findVariableVarInChildren(CBaseLanguageEntity desc)

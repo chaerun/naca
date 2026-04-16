@@ -145,12 +145,6 @@ public class DbTransferDesc
 		}
 		return null;
 	}
-
-	private DbConnectionBase getNewSourceConnection(BaseEnvironment env)
-	{
-		DbConnectionBase dbConnectionSource = env.getNewSQLConnection();
-		return dbConnectionSource;
-	}
 		
 	boolean doTransfers(BaseEnvironment env)
 	{		

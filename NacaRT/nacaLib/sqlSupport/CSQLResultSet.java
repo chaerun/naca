@@ -16,10 +16,6 @@ import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.util.ArrayList;
-
-import oracle.jdbc.OracleResultSet;
-import oracle.sql.ROWID;
-
 import jlib.log.Log;
 import jlib.misc.ArrayFixDyn;
 import jlib.misc.DBIOAccounting;
@@ -35,6 +31,8 @@ import nacaLib.tempCache.TempCacheLocator;
 import nacaLib.varEx.Var;
 import nacaLib.varEx.VarAndEdit;
 import nacaLib.varEx.VarBase;
+import oracle.jdbc.OracleResultSet;
+import oracle.sql.ROWID;
 
 // PJD ROWID Support: import oracle.sql.ROWID;
 
@@ -116,24 +114,6 @@ public class CSQLResultSet extends CJMapObject
 			ResultSetMetaData rsMetaData = m_r.getMetaData();
 			String csColName = rsMetaData.getColumnName(nColSourceIndex);
 			return csColName;
-		}
-		catch (SQLException e)
-		{
-			LogSQLException.log(e);
-		}
-		return "";
-	}
-	
-	private String getTableColName(int nColSourceIndex)
-	{
-		// DB2 JDBC Driver supports rsMetaData.getTableName(nColSourceIndex); See http://publib.boulder.ibm.com/infocenter/db2help/index.jsp?topic=/com.ibm.db2.udb.doc/ad/rjvjdapi.htm
-		try
-		{
-			ResultSetMetaData rsMetaData = m_r.getMetaData();
-			String csTableName = rsMetaData.getTableName(nColSourceIndex);
-			String csColName = rsMetaData.getColumnName(nColSourceIndex);
-			String csTableColName = SemanticContextDef.getTableColName(csTableName, csColName);
-			return csTableColName;
 		}
 		catch (SQLException e)
 		{

@@ -15,7 +15,6 @@ package jlib.log;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Vector;
-
 import jlib.misc.StopWatch;
 import jlib.xml.Tag;
 
@@ -708,31 +707,12 @@ public class Log
 		return csText;
 	}
 	
-	private static String formatFilteredWholeCallStack(StackTraceElement[] tStack)
-	{
-		String csText = "";
-		if(tStack == null)
-			return csText;
-		
-		for(int n=0; n<tStack.length; n++)
-		{
-			StackTraceElement stackElem = tStack[n];
-			if(stackElem.getFileName() != null)
-			{
-				String cs = stackElem.getFileName() + "(" + stackElem.getLineNumber() + ")";
-				csText += cs + " / ";
-			}
-		}
-		return csText;
-	}
-	
 	private static StackTraceElement[] fillWholeCallStack()
 	{
 		Throwable th = new Throwable();
 		StackTraceElement tStack[]  = th.getStackTrace();
 		return tStack;
 	}
-	
 	
 	
 /**

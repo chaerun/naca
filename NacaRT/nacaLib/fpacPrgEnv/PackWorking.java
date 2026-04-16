@@ -97,11 +97,6 @@ public class PackWorking extends FPacVarManager
 		return v;
 	}
 	
-	private int getBufferId()
-	{
-		return m_nBufferId;
-	}
-	
 	Var createFPacVar(int nPosition1Based, int nBufferLength)
 	{		
 		if(isPositionInRangeComp3(nPosition1Based))		

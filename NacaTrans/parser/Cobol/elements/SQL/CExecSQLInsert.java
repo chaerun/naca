@@ -473,20 +473,6 @@ public class CExecSQLInsert extends CBaseExecSQLAction
 		
 		return e;
 	}
-	
-	private void ExportParameters(Document root, Element parent)
-	{
-		try
-		{
-			Element e = root.createElement("Parameters") ;
-			parent.appendChild(e);
-		}
-		catch (ArrayIndexOutOfBoundsException e)
-		{
-			e.printStackTrace();
-			//System.out.println(e.toString());
-		}
-	}
 
 	public void AppendRequiredSpace()
 	{
@@ -496,30 +482,6 @@ public class CExecSQLInsert extends CBaseExecSQLAction
 	
 	protected String m_SelectClause = "" ;
 	protected Vector<CIdentifier> m_arrParametersForSelect = new Vector<CIdentifier>() ;
-
-	private void ExportValues(Document root, Element parent)
-	{
-		try
-		{
-			Element e = root.createElement("Values") ;
-			parent.appendChild(e);
-
-			int nNbItems = m_arrValues.size();
-			for(int n=0; n<nNbItems; n++)
-			{
-				Element eParam = root.createElement("Parameter") ;
-				e.appendChild(eParam);
-				
-				CTerminal s = m_arrValues.elementAt(n);
-				s.ExportTo(eParam, root) ;
-			}
-		}
-		catch (ArrayIndexOutOfBoundsException e)
-		{
-			e.printStackTrace();
-			//System.out.println(e.toString());
-		}
-	}
 
 	protected CBaseLanguageEntity DoCustomSemanticAnalysis(CBaseLanguageEntity parent, CBaseEntityFactory factory)
 	{

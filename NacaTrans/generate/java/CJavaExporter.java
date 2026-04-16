@@ -19,20 +19,18 @@
 package generate.java;
 
 import generate.CBaseLanguageExporter;
-
-import java.io.*;
-
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintStream;
+import java.io.UnsupportedEncodingException;
+import java.util.Hashtable;
 //import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
-
-import java.util.Hashtable;
-
 import parser.CGlobalCommentContainer;
-
 import semantic.expression.CBaseEntityCondition;
-import utils.Transcoder;
 import utils.COriginalLisiting;
+import utils.Transcoder;
 
 /**
  * @author sly
@@ -395,28 +393,6 @@ public class CJavaExporter extends CBaseLanguageExporter
 		}		
 		cs += ";";
 		return cs ;
-	}
-
-	private String GetLineForFieldS(Element eField)
-	{
-		String fieldname = FormatIdentifier("S" + eField.getAttribute("Name")) ;
-		String length = eField.getAttribute("Length");
-		String col = eField.getAttribute("Col");
-		String line = eField.getAttribute("Line");
-		String val = eField.getAttribute("InitialValue");
-		String color = eField.getAttribute("Color");
-		String highlight = eField.getAttribute("HighLight");
-		if (!fieldname.equals(""))
-		{
-			String cs = "MapField " + fieldname + " = edit(\""+fieldname+"\", "+line+", "+col+", "+length+")" ;
-//			if (!val.equals(""))
-//			{
-//				cs += ".localizedString("+FormatIdentifier(val)+")";
-//			}
-			cs += ";";
-			return cs ;
-		}
-		return "" ;
 	}
 
 	public void CloseBracket()

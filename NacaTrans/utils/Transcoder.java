@@ -22,7 +22,6 @@ import java.util.Hashtable;
 import java.util.Stack;
 import java.util.Vector;
 import jlib.misc.AsciiEbcdicConverter;
-import jlib.misc.NumberParser;
 import jlib.misc.StringUtil;
 import jlib.sql.SQLTypeOperation;
 import jlib.xml.Tag;
@@ -746,30 +745,7 @@ public class Transcoder
 		ms_stackTranscodedUnits = new Stack<String>();
 	}
 	
-	private static Stack<String> ms_stackTranscodedUnits = new Stack<String>(); 
-
-	private static int extractLineFromText(String csText)
-	{
-		String csTextUpper = csText.toUpperCase();
-		int nPosStartLine = csTextUpper.indexOf("LINE");
-		if(nPosStartLine >= 0)
-		{
-			while(nPosStartLine < csText.length() && (csTextUpper.charAt(nPosStartLine) < '0' || csTextUpper.charAt(nPosStartLine) > '9'))
-				nPosStartLine++;
-		}
-		if(nPosStartLine >= 0)
-		{
-			String csRight = csTextUpper.substring(nPosStartLine);
-			int nTextRight = csRight.indexOf(" ");
-			if(nTextRight >= 0)
-			{
-				String csNumber = csRight.substring(0, nTextRight);
-				int nLine = NumberParser.getAsInt(csNumber);
-				return nLine;
-			}
-		}
-		return -1;
-	}
+	private static Stack<String> ms_stackTranscodedUnits = new Stack<String>();
 	
 	private static String makeFullLogText(String csFile, int nLine, String csText, String csCategory)
 	{		

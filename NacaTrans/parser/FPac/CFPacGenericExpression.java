@@ -14,21 +14,17 @@ package parser.FPac;
 
 import java.util.Iterator;
 import java.util.Vector;
-
 import jlib.misc.NumberParser;
-
 import lexer.CReservedKeyword;
 import lexer.FPac.CFPacKeywordList;
-
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-
 import parser.expression.CDefaultConditionManager;
 import parser.expression.CExpression;
 import semantic.CBaseEntityFactory;
 import semantic.CDataEntity;
-import semantic.CSubStringAttributReference;
 import semantic.CDataEntity.CDataEntityType;
+import semantic.CSubStringAttributReference;
 import semantic.Verbs.CEntityConvertReference;
 import semantic.expression.CBaseEntityCondition;
 import semantic.expression.CBaseEntityExpression;
@@ -43,7 +39,6 @@ import utils.CObjectCatalog;
 import utils.Transcoder;
 import utils.FPacTranscoder.OperandDescription;
 import utils.FPacTranscoder.notifs.NotifGetDefaultInputFile;
-import utils.FPacTranscoder.notifs.NotifGetDefaultOutputFile;
 
 public class CFPacGenericExpression extends CExpression
 {
@@ -299,13 +294,6 @@ public class CFPacGenericExpression extends CExpression
 	private CDataEntity getDefaultInputFileBuffer(CObjectCatalog catalog)
 	{
 		NotifGetDefaultInputFile notif = new NotifGetDefaultInputFile() ;
-		catalog.SendNotifRequest(notif) ;
-		return notif.fileBuffer ;
-	}
-
-	private CDataEntity getDefaultOutputFileBuffer(CObjectCatalog catalog)
-	{
-		NotifGetDefaultOutputFile notif = new NotifGetDefaultOutputFile() ;
 		catalog.SendNotifRequest(notif) ;
 		return notif.fileBuffer ;
 	}

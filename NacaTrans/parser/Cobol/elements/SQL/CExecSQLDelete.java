@@ -18,14 +18,11 @@
  */
 package parser.Cobol.elements.SQL;
 import java.util.Vector;
-
 import lexer.CBaseToken;
 import lexer.CTokenType;
 import lexer.Cobol.CCobolKeywordList;
-
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
-
 import parser.CIdentifier;
 import semantic.CBaseEntityFactory;
 import semantic.CBaseLanguageEntity;
@@ -169,31 +166,6 @@ public class CExecSQLDelete extends CBaseExecSQLAction
 		//ExportParameters(root, e);
 	
 		return e;
-	}
-	
-	private void ExportParameters(Document root, Element parent)
-	{
-		try
-		{
-			Element e = root.createElement("Parameters") ;
-			parent.appendChild(e);
-	
-			int nNbItems = m_arrParameters.size();
-			for(int n=0; n<nNbItems; n++)
-			{
-				Element eParam = root.createElement("Parameter") ;
-				e.appendChild(eParam);
-					
-				CIdentifier s = m_arrParameters.elementAt(n);
-				s.ExportTo(eParam, root) ;
-			}
-		}
-		catch (ArrayIndexOutOfBoundsException e)
-		{
-			e.printStackTrace();
-			//System.out.println(e.toString());
-		}
-
 	}
 
 	protected CBaseLanguageEntity DoCustomSemanticAnalysis(CBaseLanguageEntity parent, CBaseEntityFactory factory)

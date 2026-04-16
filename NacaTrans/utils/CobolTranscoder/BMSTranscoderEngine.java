@@ -14,13 +14,11 @@ package utils.CobolTranscoder;
 
 import generate.CJavaEntityFactory;
 import generate.java.CJavaExporter;
-
 import java.io.File;
 import java.util.Hashtable;
 import java.util.Iterator;
-import java.util.Set;
 import java.util.Map.Entry;
-
+import java.util.Set;
 import jlib.engine.NotificationEngine;
 import jlib.misc.FileSystem;
 import jlib.misc.StringRef;
@@ -408,18 +406,5 @@ public class BMSTranscoderEngine extends TranscoderEngine<CMapSetElement, CEntit
 			if(bAdd)
 				eMap.AddElement(eField);
 		}
-	}
-	
-	private CBMSParser parseXMLResource(Tag tagCurrent)
-	{
-		CBMSParser BMSParser = new CBMSParser();
-		String csName = tagCurrent.getName();
-		if(csName.equals("MapSet"))
-		{
-			CMapSetElement e = new CMapSetElement("", 0);
-			BMSParser.setRoot(e);
-			e.loadTagParameters(tagCurrent);
-		}
-		return BMSParser;
 	}	
 }

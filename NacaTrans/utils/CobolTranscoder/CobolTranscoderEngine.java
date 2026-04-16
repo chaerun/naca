@@ -19,37 +19,12 @@ package utils.CobolTranscoder;
 
 import generate.CJavaEntityFactory;
 import generate.java.CJavaExporter;
-
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.FileReader;
-import java.io.IOException;
 import java.util.Collection;
-
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.FactoryConfigurationError;
-import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.transform.OutputKeys;
-import javax.xml.transform.Source;
-import javax.xml.transform.Transformer;
-import javax.xml.transform.TransformerConfigurationException;
-import javax.xml.transform.TransformerException;
-import javax.xml.transform.TransformerFactory;
-import javax.xml.transform.TransformerFactoryConfigurationError;
-import javax.xml.transform.dom.DOMSource;
-import javax.xml.transform.stream.StreamResult;
-
 import jlib.engine.NotificationEngine;
 import jlib.xml.Tag;
 import lexer.CBaseLexer;
 import lexer.CTokenList;
 import lexer.Cobol.CCobolLexer;
-
-import org.w3c.dom.DOMException;
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-
 import parser.CParser;
 import parser.Cobol.CCobolParser;
 import parser.Cobol.elements.CProgram;
@@ -62,7 +37,6 @@ import utils.CTransApplicationGroup;
 import utils.PathsManager;
 import utils.Transcoder;
 import utils.TranscoderEngine;
-
 
 /**
  * @author U930CV
@@ -84,30 +58,6 @@ public class CobolTranscoderEngine extends TranscoderEngine<CProgram, CEntityCla
 
 		return true ;
 	}
-	/**
-	 * 
-	 */
-
-	/**
-	 * @param eConf
-	 */
-	private void DoCSDParsing(Tag eConf)
-	{
-		Tag eCSD = eConf.getChild("CSD") ;
-		if (eCSD != null)
-		{
-			String csdFile = eCSD.getVal("File");
-			csdFile = PathsManager.adjustPath(csdFile);
-			
-			String csdOutput = eCSD.getVal("Output");
-			csdOutput = PathsManager.adjustPath(csdOutput);
-			
-			if (!csdFile.equals("") && !csdOutput.equals(""))
-			{
-				DoCSDParsing(csdFile, csdOutput) ;
-			}
-		}
-	}
 	
 	/**
 	 * @param eConf
@@ -126,7 +76,6 @@ public class CobolTranscoderEngine extends TranscoderEngine<CProgram, CEntityCla
 			}
 		}
 	}
-
 
 	/**
 	 * @param appName
@@ -150,98 +99,6 @@ public class CobolTranscoderEngine extends TranscoderEngine<CProgram, CEntityCla
 		{
 			Transcoder.logError("COBOL parsing failed") ;
 			return null ;
-		}
-	}				
-
-
-	private void DoCSDParsing(String csdFilePath, String xmlFilePath)
-	{
-		try
-		{
-			BufferedReader inputStream = new BufferedReader(new FileReader(csdFilePath));
-			String var = inputStream.readLine();
-			while (var != null)
-			{
-				if (var.startsWith("DEFINE TRANSACTION"))
-				{
-					String TID = var.substring(19, 23) ;
-					int i = 0 ;
-					do
-					{
-						i = var.indexOf("PROGRAM(") ;
-						if (i>0)
-						{
-							int f = var.indexOf(")", i+8);
-							if (f>0)
-							{
-								String prog = var.substring(i+8, f) ;
-								//m_cat.registerTransID(TID, prog) ;
-							}
-						}
-						var = inputStream.readLine() ;
-					} while (var != null && i == -1) ;
-				}
-				else
-				{
-					var = inputStream.readLine();
-				}
-			}
-		}
-		catch (FileNotFoundException e)
-		{
-			e.printStackTrace();
-			return ;
-		}
-		catch (IOException e)
-		{
-			e.printStackTrace();
-			return ;
-		}
-		try
-		{
-			Document doc = DocumentBuilderFactory.newInstance().newDocumentBuilder().newDocument() ;
-			Element eRoot = doc.createElement("root") ;
-			doc.appendChild(eRoot);
-			m_cat.ExportTransID(eRoot, doc);
-			Source source = new DOMSource(doc);
-			FileOutputStream file = new FileOutputStream(xmlFilePath);
-			StreamResult res = new StreamResult(file) ;
-			Transformer xformer = TransformerFactory.newInstance().newTransformer();
-			xformer.setOutputProperty(OutputKeys.ENCODING, "ISO8859-1");
-			xformer.setOutputProperty(OutputKeys.INDENT, "yes");
-			xformer.transform(source, res);
-		}
-		catch (DOMException e1)
-		{
-			e1.printStackTrace();
-		}
-		catch (FileNotFoundException e1)
-		{
-			e1.printStackTrace();
-		}
-		catch (TransformerConfigurationException e1)
-		{
-			e1.printStackTrace();
-		}
-		catch (IllegalArgumentException e1)
-		{
-			e1.printStackTrace();
-		}
-		catch (ParserConfigurationException e1)
-		{
-			e1.printStackTrace();
-		}
-		catch (FactoryConfigurationError e1)
-		{
-			e1.printStackTrace();
-		}
-		catch (TransformerFactoryConfigurationError e1)
-		{
-			e1.printStackTrace();
-		}
-		catch (TransformerException e1)
-		{
-			e1.printStackTrace();
 		}
 	}
 

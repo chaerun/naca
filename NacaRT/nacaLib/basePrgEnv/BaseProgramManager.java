@@ -209,23 +209,6 @@ public abstract class BaseProgramManager extends CJMapObject
 		setVarNameSectionAndParagraph(programClass, m_program, "", csProgramName);
 	}
 
-	private int calcCallParametersTotalLength(ArrayList arrCallerCallParam)
-	{
-		int nTotalParamLength = 0;
-		
-		if(arrCallerCallParam != null)
-		{
-			int nNbArg = arrCallerCallParam.size();
-			for(int nArg=0; nArg<nNbArg; nArg++)
-			{
-				CCallParam CallParam = (CCallParam) arrCallerCallParam.get(nArg);
-				if(CallParam != null)
-					nTotalParamLength += CallParam.getParamLength();
-			}
-		}
-		return nTotalParamLength;
-	}
-	
 	public Division dataDivision()
 	{
 		if(m_DataDivision == null)

@@ -1440,13 +1440,6 @@ public abstract class VarDefBase extends CJMapObject //implements Serializable
 		int nHigh = (n >> 16) & 0x0000ffff;
 		return nHigh;  
 	}
-	
-	private int setHighLow(int nHigh, int nLow)
-	{
-		int nNvalueH = ((nHigh & 0x0000ffff) << 16);
-		nNvalueH += (nLow & 0x0000ffff);
-		return nNvalueH; 
-	}
 
 	private int setHigh(int nOldValue, int nHigh)
 	{
