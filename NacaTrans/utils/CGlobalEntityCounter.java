@@ -42,9 +42,9 @@ import javax.xml.transform.stream.StreamSource;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
-import com.sun.org.apache.xml.internal.utils.IntVector;
-import com.sun.org.apache.xml.internal.utils.StringToIntTable;
-import com.sun.org.apache.xml.internal.utils.StringVector;
+import org.apache.xml.utils.IntVector;
+import org.apache.xml.utils.StringToIntTable;
+import org.apache.xml.utils.StringVector;
 
 /**
  * @author U930CV

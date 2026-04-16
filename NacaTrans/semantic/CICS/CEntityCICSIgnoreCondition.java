@@ -23,7 +23,7 @@ import semantic.CBaseActionEntity;
 import utils.CObjectCatalog;
 import utils.CobolTranscoder.Notifs.NotifDeclareUseCICSPreprocessor;
 
-import com.sun.org.apache.xml.internal.utils.StringVector;
+import org.apache.xml.utils.StringVector;
 
 /**
  * @author U930CV

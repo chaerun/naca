@@ -20,7 +20,7 @@ package parser.expression;
 
 import org.w3c.dom.*;
 
-import com.sun.org.apache.xpath.internal.Expression;
+import org.apache.xpath.Expression;
 
 import semantic.CDataEntity;
 import semantic.CBaseEntityFactory;

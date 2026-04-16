@@ -49,8 +49,8 @@ import utils.Transcoder;
 import utils.SQLSyntaxConverter.SQLSyntaxConverter;
 import utils.modificationsReporter.Reporter;
 
-import com.sun.org.apache.bcel.internal.generic.INSTANCEOF;
-import com.sun.org.apache.xml.internal.utils.StringVector;
+import org.apache.bcel.generic.INSTANCEOF;
+import org.apache.xml.utils.StringVector;
 
 /**
  * @author U930DI

@@ -12,9 +12,9 @@
  */
 package nacaLib.CESM;
 
+import java.util.LinkedList;
 import nacaLib.base.*;
 import nacaLib.varEx.Var;
-import sun.misc.Queue;
 
 /*
  * Created on Oct 19, 2004
@@ -30,13 +30,13 @@ import sun.misc.Queue;
  */
 public class CESMQueue extends CJMapObject
 {
-	protected Queue m_Queue = new Queue();
+	protected LinkedList<Var> m_Queue = new LinkedList<>();
 	protected int m_nbElements = 0;
 	protected int m_nbLastRead = 0 ;
 
 	public int Add(Var data)
 	{
-		m_Queue.enqueue(data);
+		m_Queue.add(data);
 		m_nbElements ++ ;
 		return m_nbElements ;
 	}
@@ -50,16 +50,10 @@ public class CESMQueue extends CJMapObject
 	{
 		if (m_nbLastRead < m_nbElements)
 		{
-			try
-			{
-				Var e = (Var)m_Queue.dequeue() ;
-				data.set(e) ;
-				m_nbLastRead ++ ;
-				return m_nbLastRead ;
-			}
-			catch (InterruptedException e1)
-			{
-			}
+			Var e = m_Queue.poll() ;
+			data.set(e) ;
+			m_nbLastRead ++ ;
+			return m_nbLastRead ;
 		}
 		return 0;
 	}

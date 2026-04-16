@@ -16,6 +16,7 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.LinkedList;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 import jlib.log.Log;
@@ -44,8 +45,6 @@ import nacaLib.tempCache.TempCacheLocator;
 import nacaLib.varEx.Var;
 
 import org.w3c.dom.Document;
-
-import sun.misc.Queue;
 
 public abstract class BaseEnvironment extends CJMapObject implements SessionEnvironmentRequester
 {
@@ -264,29 +263,22 @@ public abstract class BaseEnvironment extends CJMapObject implements SessionEnvi
 
 	protected void deQueueProgram()
 	{
-		try
-		{
-			if(!m_qPrograms.isEmpty())
-				m_csNextProgramToLoad = (String)m_qPrograms.dequeue();
-			else
-				m_csNextProgramToLoad = "";
-		}
-		catch (InterruptedException e)
-		{
-			m_csNextProgramToLoad = "" ;
-		}
-		m_Commarea = null ;
+		if(!m_qPrograms.isEmpty())
+			m_csNextProgramToLoad = m_qPrograms.poll();
+		else
+			m_csNextProgramToLoad = "";
 
+		m_Commarea = null ;
 	}
 	
 	public void doEnqueueProgram(String csProg)
 	{
-		m_qPrograms.enqueue(csProg);
+		m_qPrograms.add(csProg);
 	}
 	
 	private String m_csNextProgramToLoad = "" ;
 	private String m_csProgramParent = null;
-	private Queue m_qPrograms = new Queue() ;
+	private LinkedList<String> m_qPrograms = new LinkedList<>() ;
 	
 	private CCommarea m_Commarea = null ;
 
@@ -447,7 +439,7 @@ public abstract class BaseEnvironment extends CJMapObject implements SessionEnvi
 	protected String m_csTermID = "" ;
 	
 	
-	private Queue m_qData = new Queue() ;
+	private LinkedList<CESMStartData> m_qData = new LinkedList<>() ;
 	
 	public void enqueueProgram(String csTransID, CESMStartData data)
 	{
@@ -457,25 +449,18 @@ public abstract class BaseEnvironment extends CJMapObject implements SessionEnvi
 	
 	public void enqueueData(CESMStartData data)
 	{
-		m_qData.enqueue(data) ;
+		m_qData.add(data) ;
 	}
 
 
 	public CESMStartData GetEnqueuedData()
 	{
-		try
+		if (m_qData.isEmpty())
 		{
-			if (m_qData.isEmpty())
-			{
-				return null ;
-			}
-			CESMStartData v = (CESMStartData)m_qData.dequeue() ;
-			return v ;
+			return null ;
 		}
-		catch (InterruptedException e)
-		{
-			return null;
-		}
+		CESMStartData v = m_qData.poll() ;
+		return v ;
 	}
 	
 	public void StartAsynchronousProgram(String transID, String csProgramParent, CESMStartData data, int intervalTimeSeconds)

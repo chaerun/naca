@@ -26,7 +26,7 @@ import org.w3c.dom.Element;
 
 import semantic.forms.CResourceStrings;
 
-import com.sun.org.apache.xml.internal.utils.StringToStringTable;
+import org.apache.xml.utils.StringToStringTable;
 
 /**
  * @author sly

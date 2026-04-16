@@ -19,7 +19,7 @@
 package semantic.CICS;
 
 
-import com.sun.org.apache.xml.internal.utils.StringVector;
+import org.apache.xml.utils.StringVector;
 
 import generate.CBaseLanguageExporter;
 import semantic.CBaseActionEntity;

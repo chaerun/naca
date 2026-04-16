@@ -20,7 +20,7 @@ package semantic.CICS;
 
 import java.util.Vector;
 
-import com.sun.org.apache.xml.internal.utils.StringVector;
+import org.apache.xml.utils.StringVector;
 
 
 import generate.CBaseLanguageExporter;

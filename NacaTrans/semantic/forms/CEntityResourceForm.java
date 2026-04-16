@@ -42,8 +42,8 @@ import utils.CObjectCatalog;
 import utils.CRulesManager;
 import utils.Transcoder;
 
-import com.sun.org.apache.xml.internal.utils.StringToStringTable;
-import com.sun.org.apache.xml.internal.utils.StringVector;
+import org.apache.xml.utils.StringToStringTable;
+import org.apache.xml.utils.StringVector;
 
 /**
  * @author sly

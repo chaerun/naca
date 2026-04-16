@@ -39,7 +39,7 @@ import utils.NacaTransAssertException;
 import utils.Transcoder;
 import utils.modificationsReporter.Reporter;
 
-import com.sun.org.apache.xml.internal.utils.StringVector;
+import org.apache.xml.utils.StringVector;
 
 /**
  * @author sly

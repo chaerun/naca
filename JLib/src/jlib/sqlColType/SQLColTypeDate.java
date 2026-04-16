@@ -16,7 +16,7 @@
 package jlib.sqlColType;
 
 import java.sql.Timestamp;
-
+import java.time.LocalDateTime;
 import jlib.misc.NumberParser;
 
 /**
@@ -35,7 +35,7 @@ public class SQLColTypeDate
 		int nMM = NumberParser.getAsInt(csYYYYMMDD.substring(4, 6));
 		int nDD = NumberParser.getAsInt(csYYYYMMDD.substring(6, 8));
 		
-		m_ts = new Timestamp(nYYYY, nMM, nDD, 0, 0, 0, 0);
+		m_ts = Timestamp.valueOf(LocalDateTime.of(nYYYY, nMM, nDD, 0, 0, 0));
 		m_bValid = true;
 	}
 	
@@ -46,13 +46,13 @@ public class SQLColTypeDate
 		int nMM = NumberParser.getAsInt(csYYYYMMDD.substring(4, 6));
 		int nDD = NumberParser.getAsInt(csYYYYMMDD.substring(6, 8));
 		
-		m_ts = new Timestamp(nYYYY, nMM, nDD, 0, 0, 0, 0);
+		m_ts = Timestamp.valueOf(LocalDateTime.of(nYYYY, nMM, nDD, 0, 0, 0));
 		m_bValid = true;
 	}
 	
 	public void setInfinite()
 	{
-		m_ts = new Timestamp(2038, 12, 31, 0, 0, 0, 0);
+		m_ts = Timestamp.valueOf(LocalDateTime.of(2038, 12, 31, 0, 0, 0));
 		m_bValid = true;
 	}
 	

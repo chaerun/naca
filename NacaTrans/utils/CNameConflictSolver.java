@@ -23,7 +23,7 @@ import java.util.Hashtable;
 import java.util.NoSuchElementException;
 import java.util.Vector;
 
-import com.sun.org.apache.xml.internal.utils.StringVector;
+import org.apache.xml.utils.StringVector;
 
 import semantic.CBaseLanguageEntity;
 import semantic.CDataEntity;

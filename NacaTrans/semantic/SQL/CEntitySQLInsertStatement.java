@@ -19,7 +19,7 @@ import java.util.Vector;
 import semantic.CBaseActionEntity;
 import utils.CObjectCatalog;
 
-import com.sun.org.apache.xml.internal.utils.StringVector;
+import org.apache.xml.utils.StringVector;
 
 public abstract class CEntitySQLInsertStatement extends CBaseActionEntity
 {

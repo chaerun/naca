@@ -24,8 +24,8 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 
-import com.sun.org.apache.xml.internal.utils.StringToStringTable;
-import com.sun.org.apache.xml.internal.utils.StringVector;
+import org.apache.xml.utils.StringToStringTable;
+import org.apache.xml.utils.StringVector;
 
 
 /**
