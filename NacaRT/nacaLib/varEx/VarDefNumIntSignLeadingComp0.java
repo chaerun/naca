@@ -35,11 +35,6 @@ import nacaLib.tempCache.CStr;
  */
 public class VarDefNumIntSignLeadingComp0 extends VarDefNum
 {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-
 	public VarDefNumIntSignLeadingComp0(VarDefBase varDefParent, DeclareType9 declareType9, NumericValue numericValue)
 	{
 		super(varDefParent, declareType9.m_varLevel);

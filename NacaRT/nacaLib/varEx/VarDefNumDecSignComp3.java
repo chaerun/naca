@@ -19,13 +19,11 @@
 package nacaLib.varEx;
 
 import java.math.BigDecimal;
-
-import jlib.misc.*;
+import jlib.misc.NumberParser;
 import nacaLib.bdb.BtreeSegmentKeyTypeFactory;
 import nacaLib.debug.BufferSpy;
 import nacaLib.mathSupport.MathAdd;
 import nacaLib.misc.NumberParserDec;
-
 import nacaLib.sqlSupport.CSQLItemType;
 import nacaLib.tempCache.CStr;
 import nacaLib.tempCache.CStrNumber;
@@ -39,10 +37,6 @@ import nacaLib.tempCache.TempCacheLocator;
  */
 public class VarDefNumDecSignComp3 extends VarDefNum
 {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 	public VarDefNumDecSignComp3(VarDefBase varDefParent, DeclareType9 declareType9, NumericValue numericValue)
 	{
 		super(varDefParent, declareType9.m_varLevel);

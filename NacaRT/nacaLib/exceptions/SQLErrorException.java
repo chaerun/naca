@@ -13,7 +13,6 @@
 package nacaLib.exceptions;
 
 import java.sql.SQLException;
-
 import nacaLib.sqlSupport.SQL;
 
 

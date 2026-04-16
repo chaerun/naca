@@ -13,8 +13,6 @@
 package nacaLib.varEx;
 
 import java.math.BigDecimal;
-
-
 import nacaLib.bdb.BtreeSegmentKeyTypeFactory;
 import nacaLib.debug.BufferSpy;
 import nacaLib.fpacPrgEnv.DeclareTypeFPacAlphaNum;
@@ -23,10 +21,6 @@ import nacaLib.tempCache.CStr;
 
 public class VarDefFPacAlphaNum extends VarDefVariable
 {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 	public VarDefFPacAlphaNum(VarDefBase varDefParent, DeclareTypeFPacAlphaNum declareTypeFPacAlphaNum)
 	{
 		super(varDefParent, declareTypeFPacAlphaNum.m_varLevel);

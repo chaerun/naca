@@ -38,11 +38,6 @@ import nacaLib.tempCache.TempCacheLocator;
  */
 public class VarDefNumIntComp4 extends VarDefNum
 {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-
 	public VarDefNumIntComp4(VarDefBase varDefParent, DeclareType9 declareType9, NumericValue numericValue)
 	{
 		super(varDefParent, declareType9.m_varLevel);

@@ -19,8 +19,6 @@
 package nacaLib.varEx;
 
 import java.math.BigDecimal;
-
-
 import nacaLib.bdb.BtreeSegmentKeyTypeFactory;
 import nacaLib.debug.BufferSpy;
 import nacaLib.mathSupport.MathAdd;
@@ -36,11 +34,6 @@ import nacaLib.tempCache.CStr;
  */
 public class VarDefEditInMapRedefine extends VarDefEditInMapRedefineBase
 {	
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-
 	public VarDefEditInMapRedefine(VarDefBase varDefParent, DeclareTypeEditInMapRedefine declareTypeEditInMapRedefine)
 	{
 		super(varDefParent, declareTypeEditInMapRedefine.m_varLevel);

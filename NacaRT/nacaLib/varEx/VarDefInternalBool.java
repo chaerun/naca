@@ -19,8 +19,7 @@
 package nacaLib.varEx;
 
 import java.math.BigDecimal;
-
-import jlib.misc.*;
+import jlib.misc.NumberParser;
 import nacaLib.bdb.BtreeSegmentKeyTypeFactory;
 import nacaLib.mathSupport.MathAdd;
 import nacaLib.misc.StringAsciiEbcdicUtil;
@@ -37,10 +36,6 @@ import nacaLib.tempCache.TempCacheLocator;
  */
 public class VarDefInternalBool extends VarDefNum
 {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 	private VarInternalBool m_var = null;
 	
 	VarDefInternalBool(VarInternalBool var)

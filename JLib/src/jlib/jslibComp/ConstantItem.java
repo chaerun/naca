@@ -24,6 +24,8 @@ import java.io.Serializable;
  */
 public class ConstantItem implements Serializable
 {
+	private static final long serialVersionUID = 1L;
+	
 	public String codeId;
 	public String value;
 	

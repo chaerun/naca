@@ -19,8 +19,6 @@
 package nacaLib.varEx;
 
 import java.math.BigDecimal;
-
-
 import nacaLib.bdb.BtreeSegmentKeyTypeFactory;
 import nacaLib.debug.BufferSpy;
 import nacaLib.sqlSupport.CSQLItemType;
@@ -34,10 +32,6 @@ import nacaLib.tempCache.CStr;
  */
 public class VarDefX extends VarDefVariable
 {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 	public VarDefX(VarDefBase varDefParent, DeclareTypeX declareTypeX)
 	{
 		super(varDefParent, declareTypeX.m_varLevel);

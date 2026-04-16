@@ -36,11 +36,6 @@ import nacaLib.tempCache.TempCacheLocator;
  */
 public class VarDefG extends VarDefVariable
 {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-
 	public VarDefG(VarDefBase varDefParent, DeclareTypeG declareTypeG)
 	{
 		super(varDefParent, declareTypeG.m_varLevel);

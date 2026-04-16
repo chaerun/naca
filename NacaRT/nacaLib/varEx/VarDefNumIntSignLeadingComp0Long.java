@@ -19,8 +19,7 @@
 package nacaLib.varEx;
 
 import java.math.BigDecimal;
-
-import jlib.misc.*;
+import jlib.misc.NumberParser;
 import nacaLib.bdb.BtreeSegmentKeyTypeFactory;
 import nacaLib.debug.BufferSpy;
 import nacaLib.mathSupport.MathAdd;
@@ -36,11 +35,6 @@ import nacaLib.tempCache.CStr;
  */
 public class VarDefNumIntSignLeadingComp0Long extends VarDefNum
 {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-
 	public VarDefNumIntSignLeadingComp0Long(VarDefBase varDefParent, DeclareType9 declareType9, NumericValue numericValue)
 	{
 		super(varDefParent, declareType9.m_varLevel);

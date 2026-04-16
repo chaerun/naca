@@ -19,8 +19,6 @@
 package nacaLib.varEx;
 
 import java.math.BigDecimal;
-
-
 import nacaLib.basePrgEnv.BaseProgramManager;
 import nacaLib.bdb.BtreeSegmentKeyTypeFactory;
 import nacaLib.sqlSupport.CSQLItemType;
@@ -35,11 +33,6 @@ import nacaLib.tempCache.TempCacheLocator;
  */
 public class VarDefMapRedefine extends VarDefBuffer
 {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-
 	public VarDefMapRedefine(VarDefBase varDefParent, DeclareTypeMapRedefine declareTypeMapRedefine)
 	{
 		super(varDefParent, declareTypeMapRedefine.m_varLevel);

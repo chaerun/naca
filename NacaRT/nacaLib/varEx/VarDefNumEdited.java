@@ -19,8 +19,6 @@
 package nacaLib.varEx;
 
 import java.math.BigDecimal;
-
-
 import nacaLib.bdb.BtreeSegmentKeyTypeFactory;
 import nacaLib.fpacPrgEnv.DeclareTypeFPacNumEdited;
 import nacaLib.mathSupport.MathAdd;
@@ -37,11 +35,6 @@ import nacaLib.tempCache.CStr;
  */
 public class VarDefNumEdited extends VarDefNum
 {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-
 	public VarDefNumEdited(VarDefBase varDefParent, DeclareTypeNumEdited declareTypeNumEdited)
 	{
 		super(varDefParent, declareTypeNumEdited.m_varLevel);

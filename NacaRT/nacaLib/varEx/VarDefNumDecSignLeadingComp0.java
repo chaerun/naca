@@ -36,10 +36,6 @@ import nacaLib.tempCache.TempCacheLocator;
  */
 public class VarDefNumDecSignLeadingComp0 extends VarDefNum
 {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 	public VarDefNumDecSignLeadingComp0(VarDefBase varDefParent, DeclareType9 declareType9, NumericValue numericValue)
 	{
 		super(varDefParent, declareType9.m_varLevel);

@@ -15,7 +15,6 @@
  */
 package jlib.jslibComp;
 
-
 import java.io.Serializable;
 
 /**
@@ -25,6 +24,8 @@ import java.io.Serializable;
  */
 public class TextItem implements Serializable
 {
+	private static final long serialVersionUID = 1L;
+	
 	public String codeId;
 	public String valText;
 	

@@ -34,11 +34,6 @@ import nacaLib.tempCache.CStr;
  */
 public class VarDefEditInMapRedefineNum extends VarDefEditInMapRedefineBase
 {	
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-
 	public VarDefEditInMapRedefineNum(VarDefBase varDefParent, DeclareTypeEditInMapRedefineNum declareTypeEditInMapRedefineNum)
 	{
 		super(varDefParent, declareTypeEditInMapRedefineNum.m_varLevel);

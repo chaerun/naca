@@ -16,8 +16,6 @@
 package nacaLib.varEx;
 
 import java.math.BigDecimal;
-
-
 import nacaLib.bdb.BtreeSegmentKeyTypeFactory;
 import nacaLib.debug.BufferSpy;
 import nacaLib.fpacPrgEnv.DeclareTypeFPacRaw;
@@ -31,7 +29,6 @@ import nacaLib.tempCache.CStr;
  */
 public class VarDefFPacRaw extends VarDefVariable
 {
-	private static final long serialVersionUID = 1L;
 	public VarDefFPacRaw(VarDefBase varDefParent, DeclareTypeFPacRaw declareTypeFPacRaw)
 	{
 		super(varDefParent, declareTypeFPacRaw.m_varLevel);
